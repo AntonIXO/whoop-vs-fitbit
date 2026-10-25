@@ -1,0 +1,1196 @@
+{
+  "method": {
+    "matching": "same local wake-day (day), main sleep only (is_nap=false), nearest start within 6h; no source mixing",
+    "clock_time": "start_ts/end_ts are UTC instants; onset clock time is separate from latency_min",
+    "uncertainty": "descriptive paired bias/MAE; serial dependence retained by night; no iid p-values"
+  },
+  "periods": {
+    "P1": {
+      "fitbit_main_n": 71,
+      "whoop_main_n": 74,
+      "whoop_source_id": 2754,
+      "paired_n": 70,
+      "fitbit_naps": 2,
+      "whoop_naps": 2,
+      "availability": {
+        "fitbit": {
+          "latency_min": {
+            "rows": 71,
+            "non_null": 68,
+            "null": 3
+          },
+          "awakenings": {
+            "rows": 71,
+            "non_null": 71,
+            "null": 0
+          },
+          "minutes_awake": {
+            "rows": 71,
+            "non_null": 71,
+            "null": 0
+          },
+          "efficiency_pct": {
+            "rows": 71,
+            "non_null": 71,
+            "null": 0
+          },
+          "minutes_light": {
+            "rows": 71,
+            "non_null": 71,
+            "null": 0
+          },
+          "minutes_deep": {
+            "rows": 71,
+            "non_null": 71,
+            "null": 0
+          },
+          "minutes_rem": {
+            "rows": 71,
+            "non_null": 71,
+            "null": 0
+          },
+          "time_in_bed_min": {
+            "rows": 71,
+            "non_null": 71,
+            "null": 0
+          },
+          "stage_totals_valid": 71
+        },
+        "whoop": {
+          "latency_min": {
+            "rows": 74,
+            "non_null": 0,
+            "null": 74
+          },
+          "awakenings": {
+            "rows": 74,
+            "non_null": 0,
+            "null": 74
+          },
+          "minutes_awake": {
+            "rows": 74,
+            "non_null": 74,
+            "null": 0
+          },
+          "efficiency_pct": {
+            "rows": 74,
+            "non_null": 74,
+            "null": 0
+          },
+          "minutes_light": {
+            "rows": 74,
+            "non_null": 74,
+            "null": 0
+          },
+          "minutes_deep": {
+            "rows": 74,
+            "non_null": 74,
+            "null": 0
+          },
+          "minutes_rem": {
+            "rows": 74,
+            "non_null": 74,
+            "null": 0
+          },
+          "time_in_bed_min": {
+            "rows": 74,
+            "non_null": 74,
+            "null": 0
+          },
+          "stage_totals_valid": 74
+        }
+      },
+      "metrics": {
+        "minutes_awake": {
+          "n": 70,
+          "fitbit_mean": 40.32857142857143,
+          "whoop_mean": 27.757142857142856,
+          "bias_fitbit_minus_whoop": 12.571428571428571,
+          "mae": 15.628571428571428,
+          "median_abs_error": 10
+        },
+        "efficiency_pct": {
+          "n": 70,
+          "fitbit_mean": 92.19507267142858,
+          "whoop_mean": 94.44285714285714,
+          "bias_fitbit_minus_whoop": -2.2477844714285715,
+          "mae": 2.8394157571428575,
+          "median_abs_error": 1.8772160000000042
+        },
+        "minutes_light": {
+          "n": 70,
+          "fitbit_mean": 274.85714285714283,
+          "whoop_mean": 239.81428571428572,
+          "bias_fitbit_minus_whoop": 35.042857142857144,
+          "mae": 37.47142857142857,
+          "median_abs_error": 34
+        },
+        "minutes_deep": {
+          "n": 70,
+          "fitbit_mean": 98.02857142857142,
+          "whoop_mean": 124.68571428571428,
+          "bias_fitbit_minus_whoop": -26.65714285714286,
+          "mae": 28.142857142857142,
+          "median_abs_error": 29
+        },
+        "minutes_rem": {
+          "n": 70,
+          "fitbit_mean": 101.37142857142857,
+          "whoop_mean": 98.37142857142857,
+          "bias_fitbit_minus_whoop": 3.0,
+          "mae": 12.82857142857143,
+          "median_abs_error": 9
+        },
+        "latency_min": {
+          "n": 0,
+          "fitbit_mean": null,
+          "whoop_mean": null,
+          "bias_fitbit_minus_whoop": null,
+          "mae": null,
+          "median_abs_error": null
+        },
+        "awakenings": {
+          "n": 0,
+          "fitbit_mean": null,
+          "whoop_mean": null,
+          "bias_fitbit_minus_whoop": null,
+          "mae": null,
+          "median_abs_error": null
+        },
+        "time_in_bed_min": {
+          "n": 70,
+          "fitbit_mean": 515.0714285714286,
+          "whoop_mean": 490.4,
+          "bias_fitbit_minus_whoop": 24.67142857142857,
+          "mae": 24.728571428571428,
+          "median_abs_error": 18
+        }
+      },
+      "paired_nights": [
+        {
+          "fitbit_id": "019fdd84-158f-7584-a335-60ed598451ce",
+          "whoop_id": "01a023c6-3ee5-72cd-9427-8090b16bc79f",
+          "fitbit_start_ts": "2025-10-10T22:05:30+00:00",
+          "whoop_start_ts": "2025-10-11T00:12:58.44+00:00",
+          "fitbit_end_ts": "2025-10-11T06:28:30+00:00",
+          "whoop_end_ts": "2025-10-11T06:16:21.265+00:00"
+        },
+        {
+          "fitbit_id": "019fdd84-158e-72c5-a2b3-cd564b45b7c5",
+          "whoop_id": "01a023c6-3ee4-7213-8a8f-5ba7f6850adf",
+          "fitbit_start_ts": "2025-10-11T21:40:00+00:00",
+          "whoop_start_ts": "2025-10-11T21:39:07.269+00:00",
+          "fitbit_end_ts": "2025-10-12T06:15:30+00:00",
+          "whoop_end_ts": "2025-10-12T06:17:50.894+00:00"
+        },
+        {
+          "fitbit_id": "019fdd84-158c-7fa7-ab6b-fca261c8cb06",
+          "whoop_id": "01a023c6-3ee3-7148-a98a-b516291ef432",
+          "fitbit_start_ts": "2025-10-13T00:19:30+00:00",
+          "whoop_start_ts": "2025-10-13T00:22:49.124+00:00",
+          "fitbit_end_ts": "2025-10-13T06:08:30+00:00",
+          "whoop_end_ts": "2025-10-13T06:10:57.232+00:00"
+        },
+        {
+          "fitbit_id": "019fdd84-158b-7b81-b95d-edb84b25928f",
+          "whoop_id": "01a023c6-3ee2-701d-8cad-3306d33cc7b8",
+          "fitbit_start_ts": "2025-10-13T22:27:00+00:00",
+          "whoop_start_ts": "2025-10-13T22:39:43.204+00:00",
+          "fitbit_end_ts": "2025-10-14T06:41:30+00:00",
+          "whoop_end_ts": "2025-10-14T06:41:41.445+00:00"
+        },
+        {
+          "fitbit_id": "019fdd83-9590-756d-ba31-548b19d1d1f0",
+          "whoop_id": "01a023c6-3ee0-7cd9-a79f-77d9d6699d39",
+          "fitbit_start_ts": "2025-10-14T23:37:00+00:00",
+          "whoop_start_ts": "2025-10-14T23:49:34.772+00:00",
+          "fitbit_end_ts": "2025-10-15T06:30:30+00:00",
+          "whoop_end_ts": "2025-10-15T06:32:27.25+00:00"
+        },
+        {
+          "fitbit_id": "019fdd83-958f-7057-8651-65d34e2e98b5",
+          "whoop_id": "01a023c6-3edf-7bc3-b500-f269713d58f3",
+          "fitbit_start_ts": "2025-10-15T21:26:00+00:00",
+          "whoop_start_ts": "2025-10-15T21:35:20.168+00:00",
+          "fitbit_end_ts": "2025-10-16T06:10:30+00:00",
+          "whoop_end_ts": "2025-10-16T06:09:06.276+00:00"
+        },
+        {
+          "fitbit_id": "019fdd83-958d-7e15-be4d-a408598b3c0f",
+          "whoop_id": "01a023c6-3ede-7aba-b4cd-4474221c6f61",
+          "fitbit_start_ts": "2025-10-16T22:13:00+00:00",
+          "whoop_start_ts": "2025-10-16T22:20:24.457+00:00",
+          "fitbit_end_ts": "2025-10-17T07:14:30+00:00",
+          "whoop_end_ts": "2025-10-17T06:59:29.79+00:00"
+        },
+        {
+          "fitbit_id": "019fdd83-958c-7ba2-84ac-654a20f631c6",
+          "whoop_id": "01a023c6-3edd-7a45-81e0-8ee685aaf3a3",
+          "fitbit_start_ts": "2025-10-17T21:37:30+00:00",
+          "whoop_start_ts": "2025-10-17T21:50:59.044+00:00",
+          "fitbit_end_ts": "2025-10-18T05:41:30+00:00",
+          "whoop_end_ts": "2025-10-18T05:44:16.63+00:00"
+        },
+        {
+          "fitbit_id": "019fdd83-958b-7912-b746-062bd97ba233",
+          "whoop_id": "01a023c6-3edc-7915-8467-baa547777d4e",
+          "fitbit_start_ts": "2025-10-18T21:11:30+00:00",
+          "whoop_start_ts": "2025-10-18T21:29:49.32+00:00",
+          "fitbit_end_ts": "2025-10-19T06:27:30+00:00",
+          "whoop_end_ts": "2025-10-19T06:27:01.273+00:00"
+        },
+        {
+          "fitbit_id": "019fdd83-958a-74d1-8bf2-cf98f13f57ba",
+          "whoop_id": "01a023c6-3edb-7747-8d68-fbe0e4cba490",
+          "fitbit_start_ts": "2025-10-19T21:34:00+00:00",
+          "whoop_start_ts": "2025-10-19T21:38:57.002+00:00",
+          "fitbit_end_ts": "2025-10-20T05:39:30+00:00",
+          "whoop_end_ts": "2025-10-20T05:28:05.524+00:00"
+        },
+        {
+          "fitbit_id": "019fdd83-9588-7636-bc52-032402ebf512",
+          "whoop_id": "01a023c6-3eda-75e9-bd77-e99778ec3ec8",
+          "fitbit_start_ts": "2025-10-20T21:25:00+00:00",
+          "whoop_start_ts": "2025-10-20T21:46:48.274+00:00",
+          "fitbit_end_ts": "2025-10-21T06:19:30+00:00",
+          "whoop_end_ts": "2025-10-21T06:16:42.638+00:00"
+        },
+        {
+          "fitbit_id": "019fdd82-e37c-77fd-9884-fe23f20daee9",
+          "whoop_id": "01a023c6-3ed9-76ab-b8d9-2f8fe0663bfc",
+          "fitbit_start_ts": "2025-10-21T22:31:30+00:00",
+          "whoop_start_ts": "2025-10-21T22:33:05.639+00:00",
+          "fitbit_end_ts": "2025-10-22T06:15:30+00:00",
+          "whoop_end_ts": "2025-10-22T06:07:38.723+00:00"
+        },
+        {
+          "fitbit_id": "019fdd82-e37b-767c-abf1-9508d7285715",
+          "whoop_id": "01a023c6-3ed8-7734-9676-f8f4241267da",
+          "fitbit_start_ts": "2025-10-23T00:52:30+00:00",
+          "whoop_start_ts": "2025-10-23T00:58:18.093+00:00",
+          "fitbit_end_ts": "2025-10-23T06:46:30+00:00",
+          "whoop_end_ts": "2025-10-23T06:39:26.711+00:00"
+        },
+        {
+          "fitbit_id": "019fdd82-e37a-7550-b8d4-b471d6ddbf1d",
+          "whoop_id": "01a023c6-3ed7-774d-b834-84a5f98e15ae",
+          "fitbit_start_ts": "2025-10-23T20:00:00+00:00",
+          "whoop_start_ts": "2025-10-23T20:16:10.667+00:00",
+          "fitbit_end_ts": "2025-10-24T06:32:30+00:00",
+          "whoop_end_ts": "2025-10-24T06:29:17.113+00:00"
+        },
+        {
+          "fitbit_id": "019fdd82-e379-72c6-a966-86edb18b8360",
+          "whoop_id": "01a023c6-3ed6-759a-b015-2aa416b72911",
+          "fitbit_start_ts": "2025-10-24T21:53:00+00:00",
+          "whoop_start_ts": "2025-10-24T22:05:34.885+00:00",
+          "fitbit_end_ts": "2025-10-25T05:51:30+00:00",
+          "whoop_end_ts": "2025-10-25T05:43:20.145+00:00"
+        },
+        {
+          "fitbit_id": "019fdd82-e378-7021-bcf5-ad6b43ae0120",
+          "whoop_id": "01a023c6-36d6-754b-9e66-bf71f2f15e0e",
+          "fitbit_start_ts": "2025-10-25T21:59:30+00:00",
+          "whoop_start_ts": "2025-10-25T22:26:26.861+00:00",
+          "fitbit_end_ts": "2025-10-26T05:53:30+00:00",
+          "whoop_end_ts": "2025-10-26T05:51:35.462+00:00"
+        },
+        {
+          "fitbit_id": "019fdd82-e376-7b35-ad4f-5f225edbc90b",
+          "whoop_id": "01a023c6-36d5-7615-a6d2-73c261588f73",
+          "fitbit_start_ts": "2025-10-26T21:43:30+00:00",
+          "whoop_start_ts": "2025-10-26T21:59:07.178+00:00",
+          "fitbit_end_ts": "2025-10-27T08:29:30+00:00",
+          "whoop_end_ts": "2025-10-27T08:27:11.848+00:00"
+        },
+        {
+          "fitbit_id": "01a03664-e972-76e9-be04-15b0aaee6016",
+          "whoop_id": "01a023c6-36d4-76f5-9fe3-2ac22f94a943",
+          "fitbit_start_ts": "2025-10-28T22:06:00+00:00",
+          "whoop_start_ts": "2025-10-28T22:22:47.109+00:00",
+          "fitbit_end_ts": "2025-10-29T06:21:30+00:00",
+          "whoop_end_ts": "2025-10-29T05:42:17.194+00:00"
+        },
+        {
+          "fitbit_id": "019fdd79-e5a0-7c62-baf9-32fa5eb88c60",
+          "whoop_id": "01a023c6-36d3-77f9-b41d-9f3b36781024",
+          "fitbit_start_ts": "2025-10-29T22:36:00+00:00",
+          "whoop_start_ts": "2025-10-29T22:47:53.782+00:00",
+          "fitbit_end_ts": "2025-10-30T06:29:30+00:00",
+          "whoop_end_ts": "2025-10-30T06:27:13.533+00:00"
+        },
+        {
+          "fitbit_id": "019fdd79-e59f-72ea-a0b8-c0dc4dda9750",
+          "whoop_id": "01a023c6-36d2-78b8-a340-02c27c448bb7",
+          "fitbit_start_ts": "2025-10-30T22:00:00+00:00",
+          "whoop_start_ts": "2025-10-30T22:17:06.312+00:00",
+          "fitbit_end_ts": "2025-10-31T07:54:30+00:00",
+          "whoop_end_ts": "2025-10-31T07:42:22.465+00:00"
+        },
+        {
+          "fitbit_id": "019fdd79-e59d-7c52-9fd8-6d1223470758",
+          "whoop_id": "01a023c6-36d1-7a1a-a276-a23dbcf07454",
+          "fitbit_start_ts": "2025-10-31T21:47:30+00:00",
+          "whoop_start_ts": "2025-10-31T22:01:20.62+00:00",
+          "fitbit_end_ts": "2025-11-01T07:26:30+00:00",
+          "whoop_end_ts": "2025-11-01T07:21:51.388+00:00"
+        },
+        {
+          "fitbit_id": "019fdd79-e59c-74ef-98e5-474a10266f4f",
+          "whoop_id": "01a023c6-36d0-7abe-832e-f9006036fe60",
+          "fitbit_start_ts": "2025-11-01T22:20:30+00:00",
+          "whoop_start_ts": "2025-11-01T22:29:02.883+00:00",
+          "fitbit_end_ts": "2025-11-02T07:31:30+00:00",
+          "whoop_end_ts": "2025-11-02T07:30:22.917+00:00"
+        },
+        {
+          "fitbit_id": "019fdd79-e59a-7ef8-a576-8647e3f63203",
+          "whoop_id": "01a023c6-36cf-79e0-b38c-272d3355fb9d",
+          "fitbit_start_ts": "2025-11-02T23:00:30+00:00",
+          "whoop_start_ts": "2025-11-02T23:22:41.671+00:00",
+          "fitbit_end_ts": "2025-11-03T09:30:30+00:00",
+          "whoop_end_ts": "2025-11-03T09:27:09.439+00:00"
+        },
+        {
+          "fitbit_id": "019fdd79-e599-781e-a0cd-ca84be0176ac",
+          "whoop_id": "01a023c6-36ce-7a21-bd4c-b38b82bf1259",
+          "fitbit_start_ts": "2025-11-03T21:13:30+00:00",
+          "whoop_start_ts": "2025-11-03T21:45:28.698+00:00",
+          "fitbit_end_ts": "2025-11-04T07:57:30+00:00",
+          "whoop_end_ts": "2025-11-04T07:46:49.957+00:00"
+        },
+        {
+          "fitbit_id": "019fdd79-e597-7f92-b19b-cefe5d0c0b01",
+          "whoop_id": "01a023c6-36cd-7aaf-8218-3a4b0a8f51f8",
+          "fitbit_start_ts": "2025-11-04T21:34:00+00:00",
+          "whoop_start_ts": "2025-11-04T21:47:03.355+00:00",
+          "fitbit_end_ts": "2025-11-05T00:39:00+00:00",
+          "whoop_end_ts": "2025-11-05T00:16:30.576+00:00"
+        },
+        {
+          "fitbit_id": "019fdd79-35c3-7e93-972d-79673f67f879",
+          "whoop_id": "01a023c6-36cc-7b71-8138-abccdc11b302",
+          "fitbit_start_ts": "2025-11-05T20:59:30+00:00",
+          "whoop_start_ts": "2025-11-05T21:06:23.146+00:00",
+          "fitbit_end_ts": "2025-11-06T08:36:30+00:00",
+          "whoop_end_ts": "2025-11-06T08:22:09.156+00:00"
+        },
+        {
+          "fitbit_id": "019fdd79-35c2-7bd9-8138-8a1a5fdc1526",
+          "whoop_id": "01a023c6-36cb-7bdf-8eb0-e3d81e943a51",
+          "fitbit_start_ts": "2025-11-06T21:45:30+00:00",
+          "whoop_start_ts": "2025-11-06T21:48:21.241+00:00",
+          "fitbit_end_ts": "2025-11-07T06:36:30+00:00",
+          "whoop_end_ts": "2025-11-07T06:32:36.759+00:00"
+        },
+        {
+          "fitbit_id": "019fdd79-35c1-7bcb-a8fd-c8e86ad535e1",
+          "whoop_id": "01a023c6-36ca-7c8c-83aa-21b95f46566a",
+          "fitbit_start_ts": "2025-11-07T22:45:00+00:00",
+          "whoop_start_ts": "2025-11-07T22:48:50.615+00:00",
+          "fitbit_end_ts": "2025-11-08T07:29:30+00:00",
+          "whoop_end_ts": "2025-11-08T07:31:01.286+00:00"
+        },
+        {
+          "fitbit_id": "019fdd79-35c0-7bdc-818a-6db0c49c520c",
+          "whoop_id": "01a023c6-36c9-7d44-86bd-7961eaaa42b1",
+          "fitbit_start_ts": "2025-11-08T21:56:30+00:00",
+          "whoop_start_ts": "2025-11-08T22:08:08.228+00:00",
+          "fitbit_end_ts": "2025-11-09T07:53:30+00:00",
+          "whoop_end_ts": "2025-11-09T07:54:38.107+00:00"
+        },
+        {
+          "fitbit_id": "019fdd79-35bf-7ba8-a050-23649b90a691",
+          "whoop_id": "01a023c6-36c8-7c9c-aff0-441ab753dab6",
+          "fitbit_start_ts": "2025-11-10T00:40:30+00:00",
+          "whoop_start_ts": "2025-11-10T00:51:30.027+00:00",
+          "fitbit_end_ts": "2025-11-10T05:47:30+00:00",
+          "whoop_end_ts": "2025-11-10T05:48:04.123+00:00"
+        },
+        {
+          "fitbit_id": "019fdd79-35be-7b18-9730-3ca1f3825baf",
+          "whoop_id": "01a023c6-36c7-7bfd-bd75-88331eb89505",
+          "fitbit_start_ts": "2025-11-10T21:41:00+00:00",
+          "whoop_start_ts": "2025-11-10T21:44:23.01+00:00",
+          "fitbit_end_ts": "2025-11-11T07:11:00+00:00",
+          "whoop_end_ts": "2025-11-11T07:10:49.439+00:00"
+        },
+        {
+          "fitbit_id": "019fdd79-35bd-71ae-9495-8f5f086d7d20",
+          "whoop_id": "01a023c6-36c6-7a5c-a8e3-0c23ecfc2a88",
+          "fitbit_start_ts": "2025-11-11T22:39:00+00:00",
+          "whoop_start_ts": "2025-11-11T22:43:59.505+00:00",
+          "fitbit_end_ts": "2025-11-12T05:58:30+00:00",
+          "whoop_end_ts": "2025-11-12T05:57:14.575+00:00"
+        },
+        {
+          "fitbit_id": "019fdd78-8e63-754a-bd7a-acbe9d8ad5ee",
+          "whoop_id": "01a023c6-36c5-7930-8b9c-9ab62c7dd0a7",
+          "fitbit_start_ts": "2025-11-12T22:26:30+00:00",
+          "whoop_start_ts": "2025-11-12T22:28:54.105+00:00",
+          "fitbit_end_ts": "2025-11-13T05:57:30+00:00",
+          "whoop_end_ts": "2025-11-13T05:49:11.938+00:00"
+        },
+        {
+          "fitbit_id": "019fdd78-8e62-7351-bb92-bf898476a9fc",
+          "whoop_id": "01a023c6-36c4-78ae-b0b0-e756d582ef16",
+          "fitbit_start_ts": "2025-11-13T22:36:00+00:00",
+          "whoop_start_ts": "2025-11-13T22:53:55.798+00:00",
+          "fitbit_end_ts": "2025-11-14T08:04:00+00:00",
+          "whoop_end_ts": "2025-11-14T07:48:23.289+00:00"
+        },
+        {
+          "fitbit_id": "019fdd78-8e61-721a-9064-32dc9b00cb7b",
+          "whoop_id": "01a023c6-36c3-76b5-bb35-42dfd1937d7e",
+          "fitbit_start_ts": "2025-11-14T21:47:00+00:00",
+          "whoop_start_ts": "2025-11-14T22:06:30.767+00:00",
+          "fitbit_end_ts": "2025-11-15T07:39:30+00:00",
+          "whoop_end_ts": "2025-11-15T07:37:39.801+00:00"
+        },
+        {
+          "fitbit_id": "019fdd78-8e60-70a8-ac8b-b99c5bdddac5",
+          "whoop_id": "01a023c6-36c1-7449-b33e-46cdce731847",
+          "fitbit_start_ts": "2025-11-17T01:04:00+00:00",
+          "whoop_start_ts": "2025-11-17T01:05:33.53+00:00",
+          "fitbit_end_ts": "2025-11-17T05:50:30+00:00",
+          "whoop_end_ts": "2025-11-17T05:28:28.788+00:00"
+        },
+        {
+          "fitbit_id": "019fdd78-8e5f-707c-b94e-0fe2aeb281dd",
+          "whoop_id": "01a023c6-36c0-7317-bfce-cc7629d22919",
+          "fitbit_start_ts": "2025-11-17T21:46:00+00:00",
+          "whoop_start_ts": "2025-11-17T21:50:46.113+00:00",
+          "fitbit_end_ts": "2025-11-18T07:27:30+00:00",
+          "whoop_end_ts": "2025-11-18T07:16:28.193+00:00"
+        },
+        {
+          "fitbit_id": "019fdd78-8e5d-7d70-b1a7-2b8eded1291f",
+          "whoop_id": "01a023c6-36bf-7143-bce3-c22480144740",
+          "fitbit_start_ts": "2025-11-18T23:23:00+00:00",
+          "whoop_start_ts": "2025-11-18T23:37:44.182+00:00",
+          "fitbit_end_ts": "2025-11-19T06:03:30+00:00",
+          "whoop_end_ts": "2025-11-19T06:06:53.671+00:00"
+        },
+        {
+          "fitbit_id": "019fdd77-fcaa-7472-a9b4-ddb0c8b79c41",
+          "whoop_id": "01a023c6-36be-7067-9c19-8450aa9251c4",
+          "fitbit_start_ts": "2025-11-19T22:06:30+00:00",
+          "whoop_start_ts": "2025-11-19T22:31:29.118+00:00",
+          "fitbit_end_ts": "2025-11-20T04:35:30+00:00",
+          "whoop_end_ts": "2025-11-20T04:36:08.489+00:00"
+        },
+        {
+          "fitbit_id": "019fdd77-fca9-72fa-be3d-ce540b130a12",
+          "whoop_id": "01a023c6-36bd-704e-8230-6577b1fbe92b",
+          "fitbit_start_ts": "2025-11-20T21:29:00+00:00",
+          "whoop_start_ts": "2025-11-20T21:38:51.352+00:00",
+          "fitbit_end_ts": "2025-11-21T06:04:30+00:00",
+          "whoop_end_ts": "2025-11-21T05:57:28.913+00:00"
+        },
+        {
+          "fitbit_id": "019fdd77-fca8-7259-b133-658d9e57f640",
+          "whoop_id": "01a023c6-36bb-7fdb-8b3a-b05eeb26ac2c",
+          "fitbit_start_ts": "2025-11-21T22:17:30+00:00",
+          "whoop_start_ts": "2025-11-21T22:24:19.825+00:00",
+          "fitbit_end_ts": "2025-11-22T07:12:30+00:00",
+          "whoop_end_ts": "2025-11-22T06:56:42.947+00:00"
+        },
+        {
+          "fitbit_id": "019fdd77-fca7-70cf-99f0-3e2c18490efc",
+          "whoop_id": "01a023c6-36ba-7f63-89dc-dde79f94e068",
+          "fitbit_start_ts": "2025-11-22T21:30:00+00:00",
+          "whoop_start_ts": "2025-11-22T21:41:50.931+00:00",
+          "fitbit_end_ts": "2025-11-23T06:41:30+00:00",
+          "whoop_end_ts": "2025-11-23T06:40:24.855+00:00"
+        },
+        {
+          "fitbit_id": "019fdd77-fca5-7f96-bad8-58e4e9f5cc5d",
+          "whoop_id": "01a023c6-36b9-75a4-a5f0-e5f0eca87c58",
+          "fitbit_start_ts": "2025-11-23T21:25:30+00:00",
+          "whoop_start_ts": "2025-11-23T21:48:23.558+00:00",
+          "fitbit_end_ts": "2025-11-24T06:46:30+00:00",
+          "whoop_end_ts": "2025-11-24T06:42:26.614+00:00"
+        },
+        {
+          "fitbit_id": "019fdd77-fca4-7e0f-b8c8-f8cefacb2c89",
+          "whoop_id": "01a023c6-2978-76e8-8151-9d2a08128651",
+          "fitbit_start_ts": "2025-11-24T21:49:00+00:00",
+          "whoop_start_ts": "2025-11-24T22:15:52.535+00:00",
+          "fitbit_end_ts": "2025-11-25T07:01:30+00:00",
+          "whoop_end_ts": "2025-11-25T07:02:59.805+00:00"
+        },
+        {
+          "fitbit_id": "019fdd77-fca3-7489-98e1-76c4a1bed812",
+          "whoop_id": "01a023c6-2977-7627-8bad-4fc21a785998",
+          "fitbit_start_ts": "2025-11-25T22:36:00+00:00",
+          "whoop_start_ts": "2025-11-25T22:40:28.469+00:00",
+          "fitbit_end_ts": "2025-11-26T03:00:30+00:00",
+          "whoop_end_ts": "2025-11-26T02:56:34.005+00:00"
+        },
+        {
+          "fitbit_id": "019fdd77-3f46-7396-8a52-2493500a121a",
+          "whoop_id": "01a023c6-2976-7593-a4b9-a3543a9b8178",
+          "fitbit_start_ts": "2025-11-26T19:44:00+00:00",
+          "whoop_start_ts": "2025-11-26T19:48:09.582+00:00",
+          "fitbit_end_ts": "2025-11-27T05:44:30+00:00",
+          "whoop_end_ts": "2025-11-27T05:47:37.86+00:00"
+        },
+        {
+          "fitbit_id": "019fdd77-3f45-7358-ae13-340bcdccb276",
+          "whoop_id": "01a023c6-2974-7bf2-95a8-1c75792ddebc",
+          "fitbit_start_ts": "2025-11-27T21:36:30+00:00",
+          "whoop_start_ts": "2025-11-27T21:40:11.43+00:00",
+          "fitbit_end_ts": "2025-11-28T06:12:30+00:00",
+          "whoop_end_ts": "2025-11-28T06:10:08.311+00:00"
+        },
+        {
+          "fitbit_id": "019fdd77-3f44-732d-92c1-2b6f4c69b355",
+          "whoop_id": "01a023c6-2973-7ac5-bbf5-0e9054c42d06",
+          "fitbit_start_ts": "2025-11-28T21:17:30+00:00",
+          "whoop_start_ts": "2025-11-28T21:29:08.008+00:00",
+          "fitbit_end_ts": "2025-11-29T05:56:30+00:00",
+          "whoop_end_ts": "2025-11-29T05:48:56.671+00:00"
+        },
+        {
+          "fitbit_id": "019fdd77-3f43-7085-8160-4cfb6d48258c",
+          "whoop_id": "01a023c6-2972-79d8-ab9c-522e80c7873e",
+          "fitbit_start_ts": "2025-11-29T21:28:30+00:00",
+          "whoop_start_ts": "2025-11-29T21:37:19.54+00:00",
+          "fitbit_end_ts": "2025-11-30T06:00:30+00:00",
+          "whoop_end_ts": "2025-11-30T05:51:30.69+00:00"
+        },
+        {
+          "fitbit_id": "019fdd77-3f41-7f57-9a01-3ef1a03b1c5f",
+          "whoop_id": "01a023c6-2971-78fa-a53a-549b880f0b3a",
+          "fitbit_start_ts": "2025-11-30T21:44:00+00:00",
+          "whoop_start_ts": "2025-11-30T22:25:20.757+00:00",
+          "fitbit_end_ts": "2025-12-01T06:13:30+00:00",
+          "whoop_end_ts": "2025-12-01T06:11:43.248+00:00"
+        },
+        {
+          "fitbit_id": "019fdd77-3f40-7bfd-a503-1c90ab693aff",
+          "whoop_id": "01a023c6-2970-7873-948c-1bc64913b11b",
+          "fitbit_start_ts": "2025-12-01T21:47:00+00:00",
+          "whoop_start_ts": "2025-12-01T21:56:30.985+00:00",
+          "fitbit_end_ts": "2025-12-02T06:46:30+00:00",
+          "whoop_end_ts": "2025-12-02T06:40:43.397+00:00"
+        },
+        {
+          "fitbit_id": "019fdd76-a064-7689-a175-a6112c9805ba",
+          "whoop_id": "01a023c6-296d-74e5-b4ee-942dfbf94cd0",
+          "fitbit_start_ts": "2025-12-03T19:48:00+00:00",
+          "whoop_start_ts": "2025-12-03T20:26:05.68+00:00",
+          "fitbit_end_ts": "2025-12-04T06:10:30+00:00",
+          "whoop_end_ts": "2025-12-04T06:06:19.706+00:00"
+        },
+        {
+          "fitbit_id": "019fdd76-a063-759e-96d7-2050d8b9f77b",
+          "whoop_id": "01a023c6-296c-74c7-b6a9-691b5d0f4c84",
+          "fitbit_start_ts": "2025-12-04T22:04:30+00:00",
+          "whoop_start_ts": "2025-12-04T22:22:49.264+00:00",
+          "fitbit_end_ts": "2025-12-05T06:30:30+00:00",
+          "whoop_end_ts": "2025-12-05T06:28:50.29+00:00"
+        },
+        {
+          "fitbit_id": "019fdd76-a062-7486-9401-7a2e0e07bdfc",
+          "whoop_id": "01a023c6-296b-747a-93ae-f13a9cc8e4b0",
+          "fitbit_start_ts": "2025-12-05T22:45:30+00:00",
+          "whoop_start_ts": "2025-12-05T22:51:07.054+00:00",
+          "fitbit_end_ts": "2025-12-06T07:12:30+00:00",
+          "whoop_end_ts": "2025-12-06T07:11:59.277+00:00"
+        },
+        {
+          "fitbit_id": "019fdd76-a061-72ec-9b87-5987c253d264",
+          "whoop_id": "01a023c6-2969-763f-a4f4-c3de29139047",
+          "fitbit_start_ts": "2025-12-06T21:40:00+00:00",
+          "whoop_start_ts": "2025-12-06T22:00:54.502+00:00",
+          "fitbit_end_ts": "2025-12-07T07:01:30+00:00",
+          "whoop_end_ts": "2025-12-07T06:57:35.664+00:00"
+        },
+        {
+          "fitbit_id": "019fdd76-a05f-7b28-8fed-692376ac162f",
+          "whoop_id": "01a023c6-2968-7675-a509-dba810b9f529",
+          "fitbit_start_ts": "2025-12-07T21:43:30+00:00",
+          "whoop_start_ts": "2025-12-07T22:18:54.967+00:00",
+          "fitbit_end_ts": "2025-12-08T06:21:30+00:00",
+          "whoop_end_ts": "2025-12-08T06:16:45.992+00:00"
+        },
+        {
+          "fitbit_id": "019fdd76-a05e-76e8-9ca0-4947686c9404",
+          "whoop_id": "01a023c6-2967-767f-87ee-b4cd325e12b1",
+          "fitbit_start_ts": "2025-12-08T22:01:00+00:00",
+          "whoop_start_ts": "2025-12-08T22:30:31.045+00:00",
+          "fitbit_end_ts": "2025-12-09T08:11:30+00:00",
+          "whoop_end_ts": "2025-12-09T08:04:16.937+00:00"
+        },
+        {
+          "fitbit_id": "019fdd76-a05d-71fc-b2db-800305e0e448",
+          "whoop_id": "01a023c6-2966-764a-b794-7f5e8deab762",
+          "fitbit_start_ts": "2025-12-10T00:24:00+00:00",
+          "whoop_start_ts": "2025-12-10T00:34:34.06+00:00",
+          "fitbit_end_ts": "2025-12-10T06:04:30+00:00",
+          "whoop_end_ts": "2025-12-10T05:58:02.708+00:00"
+        },
+        {
+          "fitbit_id": "019fdd76-34f1-7bd8-8a4d-af82c1d596dc",
+          "whoop_id": "01a023c6-2965-739f-a8d0-06b6522166c3",
+          "fitbit_start_ts": "2025-12-10T21:56:30+00:00",
+          "whoop_start_ts": "2025-12-10T22:06:19.263+00:00",
+          "fitbit_end_ts": "2025-12-11T07:33:30+00:00",
+          "whoop_end_ts": "2025-12-11T07:36:59.033+00:00"
+        },
+        {
+          "fitbit_id": "019fdd76-34f0-7b2e-8b17-542a79bf5009",
+          "whoop_id": "01a023c6-2964-73ea-ac5c-baaaa77568ce",
+          "fitbit_start_ts": "2025-12-11T23:54:30+00:00",
+          "whoop_start_ts": "2025-12-11T23:53:43.956+00:00",
+          "fitbit_end_ts": "2025-12-12T09:08:30+00:00",
+          "whoop_end_ts": "2025-12-12T09:09:58.467+00:00"
+        },
+        {
+          "fitbit_id": "019fdd76-34ef-7a20-b105-f6790580a775",
+          "whoop_id": "01a023c6-2963-7342-b0d5-e1ece8c5c5ac",
+          "fitbit_start_ts": "2025-12-13T00:41:00+00:00",
+          "whoop_start_ts": "2025-12-13T00:58:04.983+00:00",
+          "fitbit_end_ts": "2025-12-13T06:56:30+00:00",
+          "whoop_end_ts": "2025-12-13T06:55:04.768+00:00"
+        },
+        {
+          "fitbit_id": "019fdd76-34ee-771c-a44b-2b9bc1908697",
+          "whoop_id": "01a023c6-2960-729b-a2c5-ed07650aff15",
+          "fitbit_start_ts": "2025-12-14T20:49:30+00:00",
+          "whoop_start_ts": "2025-12-14T21:27:57.015+00:00",
+          "fitbit_end_ts": "2025-12-15T09:18:30+00:00",
+          "whoop_end_ts": "2025-12-15T09:21:45.797+00:00"
+        },
+        {
+          "fitbit_id": "019fdd76-34ed-7209-a48e-a8168995551a",
+          "whoop_id": "01a023c6-295f-72b3-9b9d-91e4d869b003",
+          "fitbit_start_ts": "2025-12-15T22:59:30+00:00",
+          "whoop_start_ts": "2025-12-15T23:18:29.576+00:00",
+          "fitbit_end_ts": "2025-12-16T08:46:30+00:00",
+          "whoop_end_ts": "2025-12-16T08:49:00.887+00:00"
+        },
+        {
+          "fitbit_id": "019fdd76-34eb-7057-931f-6addfe586968",
+          "whoop_id": "01a023c6-295e-72f1-87c0-9d40be4e027d",
+          "fitbit_start_ts": "2025-12-16T21:11:30+00:00",
+          "whoop_start_ts": "2025-12-16T22:42:46.252+00:00",
+          "fitbit_end_ts": "2025-12-17T06:21:30+00:00",
+          "whoop_end_ts": "2025-12-17T06:19:21.462+00:00"
+        },
+        {
+          "fitbit_id": "01a03660-517f-7f0f-923c-7b1388b99831",
+          "whoop_id": "01a023c6-295d-72f0-ad1a-94d409e9a0ae",
+          "fitbit_start_ts": "2025-12-17T22:41:30+00:00",
+          "whoop_start_ts": "2025-12-17T22:59:32.02+00:00",
+          "fitbit_end_ts": "2025-12-18T09:05:00+00:00",
+          "whoop_end_ts": "2025-12-18T07:03:52.674+00:00"
+        },
+        {
+          "fitbit_id": "019fdd73-dd52-7893-8d91-886554c32e1f",
+          "whoop_id": "01a023c6-295c-72d9-addc-42815d4ae4b8",
+          "fitbit_start_ts": "2025-12-19T00:08:00+00:00",
+          "whoop_start_ts": "2025-12-19T00:15:05.614+00:00",
+          "fitbit_end_ts": "2025-12-19T08:06:30+00:00",
+          "whoop_end_ts": "2025-12-19T08:00:25.617+00:00"
+        },
+        {
+          "fitbit_id": "019fdd73-dd51-7787-b90f-453cb3d9c8b4",
+          "whoop_id": "01a023c6-295b-7223-b574-0e57033b755f",
+          "fitbit_start_ts": "2025-12-19T23:10:30+00:00",
+          "whoop_start_ts": "2025-12-19T23:13:55.056+00:00",
+          "fitbit_end_ts": "2025-12-20T08:59:30+00:00",
+          "whoop_end_ts": "2025-12-20T08:46:58.885+00:00"
+        },
+        {
+          "fitbit_id": "019fdd73-dd50-7641-af19-fb5cf3359d47",
+          "whoop_id": "01a023c6-295a-70bf-974b-db341cb5adeb",
+          "fitbit_start_ts": "2025-12-20T22:01:30+00:00",
+          "whoop_start_ts": "2025-12-21T00:23:48.793+00:00",
+          "fitbit_end_ts": "2025-12-21T08:32:30+00:00",
+          "whoop_end_ts": "2025-12-21T08:25:23.746+00:00"
+        },
+        {
+          "fitbit_id": "019fdd73-dd4f-73ce-8479-42f4bf88cb28",
+          "whoop_id": "01a023c6-2958-7fc7-90dd-318d9b3a802d",
+          "fitbit_start_ts": "2025-12-21T23:13:00+00:00",
+          "whoop_start_ts": "2025-12-21T23:12:13.232+00:00",
+          "fitbit_end_ts": "2025-12-22T08:28:30+00:00",
+          "whoop_end_ts": "2025-12-22T08:20:56.954+00:00"
+        },
+        {
+          "fitbit_id": "019fdd73-dd4e-70f7-b2c2-26c1d1fd7ccf",
+          "whoop_id": "01a023c6-2957-7ea3-a101-44e0666b782f",
+          "fitbit_start_ts": "2025-12-22T23:51:30+00:00",
+          "whoop_start_ts": "2025-12-23T00:09:40.033+00:00",
+          "fitbit_end_ts": "2025-12-23T06:53:00+00:00",
+          "whoop_end_ts": "2025-12-23T06:47:58.348+00:00"
+        }
+      ]
+    },
+    "P2": {
+      "fitbit_main_n": 28,
+      "whoop_main_n": 0,
+      "whoop_source_id": 2754,
+      "paired_n": 0,
+      "fitbit_naps": 1,
+      "whoop_naps": 0,
+      "availability": {
+        "fitbit": {
+          "latency_min": {
+            "rows": 28,
+            "non_null": 17,
+            "null": 11
+          },
+          "awakenings": {
+            "rows": 28,
+            "non_null": 28,
+            "null": 0
+          },
+          "minutes_awake": {
+            "rows": 28,
+            "non_null": 28,
+            "null": 0
+          },
+          "efficiency_pct": {
+            "rows": 28,
+            "non_null": 28,
+            "null": 0
+          },
+          "minutes_light": {
+            "rows": 28,
+            "non_null": 28,
+            "null": 0
+          },
+          "minutes_deep": {
+            "rows": 28,
+            "non_null": 28,
+            "null": 0
+          },
+          "minutes_rem": {
+            "rows": 28,
+            "non_null": 28,
+            "null": 0
+          },
+          "time_in_bed_min": {
+            "rows": 28,
+            "non_null": 28,
+            "null": 0
+          },
+          "stage_totals_valid": 15
+        },
+        "whoop": {
+          "latency_min": {
+            "rows": 0,
+            "non_null": 0,
+            "null": 0
+          },
+          "awakenings": {
+            "rows": 0,
+            "non_null": 0,
+            "null": 0
+          },
+          "minutes_awake": {
+            "rows": 0,
+            "non_null": 0,
+            "null": 0
+          },
+          "efficiency_pct": {
+            "rows": 0,
+            "non_null": 0,
+            "null": 0
+          },
+          "minutes_light": {
+            "rows": 0,
+            "non_null": 0,
+            "null": 0
+          },
+          "minutes_deep": {
+            "rows": 0,
+            "non_null": 0,
+            "null": 0
+          },
+          "minutes_rem": {
+            "rows": 0,
+            "non_null": 0,
+            "null": 0
+          },
+          "time_in_bed_min": {
+            "rows": 0,
+            "non_null": 0,
+            "null": 0
+          },
+          "stage_totals_valid": 0
+        }
+      },
+      "metrics": {
+        "minutes_awake": {
+          "n": 0,
+          "fitbit_mean": null,
+          "whoop_mean": null,
+          "bias_fitbit_minus_whoop": null,
+          "mae": null,
+          "median_abs_error": null
+        },
+        "efficiency_pct": {
+          "n": 0,
+          "fitbit_mean": null,
+          "whoop_mean": null,
+          "bias_fitbit_minus_whoop": null,
+          "mae": null,
+          "median_abs_error": null
+        },
+        "minutes_light": {
+          "n": 0,
+          "fitbit_mean": null,
+          "whoop_mean": null,
+          "bias_fitbit_minus_whoop": null,
+          "mae": null,
+          "median_abs_error": null
+        },
+        "minutes_deep": {
+          "n": 0,
+          "fitbit_mean": null,
+          "whoop_mean": null,
+          "bias_fitbit_minus_whoop": null,
+          "mae": null,
+          "median_abs_error": null
+        },
+        "minutes_rem": {
+          "n": 0,
+          "fitbit_mean": null,
+          "whoop_mean": null,
+          "bias_fitbit_minus_whoop": null,
+          "mae": null,
+          "median_abs_error": null
+        },
+        "latency_min": {
+          "n": 0,
+          "fitbit_mean": null,
+          "whoop_mean": null,
+          "bias_fitbit_minus_whoop": null,
+          "mae": null,
+          "median_abs_error": null
+        },
+        "awakenings": {
+          "n": 0,
+          "fitbit_mean": null,
+          "whoop_mean": null,
+          "bias_fitbit_minus_whoop": null,
+          "mae": null,
+          "median_abs_error": null
+        },
+        "time_in_bed_min": {
+          "n": 0,
+          "fitbit_mean": null,
+          "whoop_mean": null,
+          "bias_fitbit_minus_whoop": null,
+          "mae": null,
+          "median_abs_error": null
+        }
+      },
+      "paired_nights": []
+    },
+    "P2_MAY": {
+      "fitbit_main_n": 26,
+      "whoop_main_n": 17,
+      "whoop_source_id": 2757,
+      "paired_n": 17,
+      "fitbit_naps": 1,
+      "whoop_naps": 1,
+      "availability": {
+        "fitbit": {
+          "latency_min": {
+            "rows": 26,
+            "non_null": 15,
+            "null": 11
+          },
+          "awakenings": {
+            "rows": 26,
+            "non_null": 26,
+            "null": 0
+          },
+          "minutes_awake": {
+            "rows": 26,
+            "non_null": 26,
+            "null": 0
+          },
+          "efficiency_pct": {
+            "rows": 26,
+            "non_null": 26,
+            "null": 0
+          },
+          "minutes_light": {
+            "rows": 26,
+            "non_null": 26,
+            "null": 0
+          },
+          "minutes_deep": {
+            "rows": 26,
+            "non_null": 26,
+            "null": 0
+          },
+          "minutes_rem": {
+            "rows": 26,
+            "non_null": 26,
+            "null": 0
+          },
+          "time_in_bed_min": {
+            "rows": 26,
+            "non_null": 26,
+            "null": 0
+          },
+          "stage_totals_valid": 13
+        },
+        "whoop": {
+          "latency_min": {
+            "rows": 17,
+            "non_null": 0,
+            "null": 17
+          },
+          "awakenings": {
+            "rows": 17,
+            "non_null": 0,
+            "null": 17
+          },
+          "minutes_awake": {
+            "rows": 17,
+            "non_null": 17,
+            "null": 0
+          },
+          "efficiency_pct": {
+            "rows": 17,
+            "non_null": 17,
+            "null": 0
+          },
+          "minutes_light": {
+            "rows": 17,
+            "non_null": 17,
+            "null": 0
+          },
+          "minutes_deep": {
+            "rows": 17,
+            "non_null": 17,
+            "null": 0
+          },
+          "minutes_rem": {
+            "rows": 17,
+            "non_null": 17,
+            "null": 0
+          },
+          "time_in_bed_min": {
+            "rows": 17,
+            "non_null": 17,
+            "null": 0
+          },
+          "stage_totals_valid": 17
+        }
+      },
+      "metrics": {
+        "minutes_awake": {
+          "n": 17,
+          "fitbit_mean": 29.352941176470587,
+          "whoop_mean": 33.411764705882355,
+          "bias_fitbit_minus_whoop": -4.0588235294117645,
+          "mae": 4.0588235294117645,
+          "median_abs_error": 1
+        },
+        "efficiency_pct": {
+          "n": 17,
+          "fitbit_mean": 92.38820735294118,
+          "whoop_mean": 92.44117647058823,
+          "bias_fitbit_minus_whoop": -0.052969117647057994,
+          "mae": 1.3524927647058835,
+          "median_abs_error": 0.15331999999999368
+        },
+        "minutes_light": {
+          "n": 4,
+          "fitbit_mean": 324.5,
+          "whoop_mean": 276.0,
+          "bias_fitbit_minus_whoop": 48.5,
+          "mae": 48.5,
+          "median_abs_error": 46
+        },
+        "minutes_deep": {
+          "n": 4,
+          "fitbit_mean": 93.0,
+          "whoop_mean": 132.25,
+          "bias_fitbit_minus_whoop": -39.25,
+          "mae": 39.25,
+          "median_abs_error": 47
+        },
+        "minutes_rem": {
+          "n": 4,
+          "fitbit_mean": 101.5,
+          "whoop_mean": 94.0,
+          "bias_fitbit_minus_whoop": 7.5,
+          "mae": 11.0,
+          "median_abs_error": 12
+        },
+        "latency_min": {
+          "n": 0,
+          "fitbit_mean": null,
+          "whoop_mean": null,
+          "bias_fitbit_minus_whoop": null,
+          "mae": null,
+          "median_abs_error": null
+        },
+        "awakenings": {
+          "n": 0,
+          "fitbit_mean": null,
+          "whoop_mean": null,
+          "bias_fitbit_minus_whoop": null,
+          "mae": null,
+          "median_abs_error": null
+        },
+        "time_in_bed_min": {
+          "n": 17,
+          "fitbit_mean": 458.3529411764706,
+          "whoop_mean": 457.8235294117647,
+          "bias_fitbit_minus_whoop": 0.5294117647058824,
+          "mae": 1.4705882352941178,
+          "median_abs_error": 1
+        }
+      },
+      "paired_nights": [
+        {
+          "fitbit_id": "019fdd62-a9cd-7bee-a1a3-197b15a02c07",
+          "whoop_id": "01a023e1-fb1b-775a-8b24-1d16e03e1608",
+          "fitbit_start_ts": "2026-04-30T23:54:31.069+00:00",
+          "whoop_start_ts": "2026-04-30T23:54:31.069+00:00",
+          "fitbit_end_ts": "2026-05-01T06:43:02.974+00:00",
+          "whoop_end_ts": "2026-05-01T06:43:02.974+00:00"
+        },
+        {
+          "fitbit_id": "019fdd62-a9cc-7ca6-a20f-5e73cbb3cb10",
+          "whoop_id": "01a023e1-fb1a-7646-9ac4-8fba753c3268",
+          "fitbit_start_ts": "2026-05-01T23:11:07.177+00:00",
+          "whoop_start_ts": "2026-05-01T23:11:07.177+00:00",
+          "fitbit_end_ts": "2026-05-02T04:26:51.918+00:00",
+          "whoop_end_ts": "2026-05-02T04:26:51.918+00:00"
+        },
+        {
+          "fitbit_id": "019fdd62-a9cb-7ca7-b35e-4e1dc8c179f0",
+          "whoop_id": "01a023e1-fb19-7659-bbd3-80e3c8eb5ba9",
+          "fitbit_start_ts": "2026-05-02T23:02:00+00:00",
+          "whoop_start_ts": "2026-05-02T23:01:39.287+00:00",
+          "fitbit_end_ts": "2026-05-03T09:35:00+00:00",
+          "whoop_end_ts": "2026-05-03T09:36:15.541+00:00"
+        },
+        {
+          "fitbit_id": "019fdd62-a9ca-7a7e-ae79-da08cabf47d7",
+          "whoop_id": "01a023e1-fb18-76b0-b2b2-71e04656d25e",
+          "fitbit_start_ts": "2026-05-03T21:50:00+00:00",
+          "whoop_start_ts": "2026-05-03T21:52:29.959+00:00",
+          "fitbit_end_ts": "2026-05-04T05:39:00+00:00",
+          "whoop_end_ts": "2026-05-04T05:42:44.887+00:00"
+        },
+        {
+          "fitbit_id": "019fdd62-44ac-7407-b627-3336330b0ecf",
+          "whoop_id": "01a023e1-fb17-76d9-8969-7f34f2fad1f5",
+          "fitbit_start_ts": "2026-05-04T22:49:00+00:00",
+          "whoop_start_ts": "2026-05-04T22:52:41.683+00:00",
+          "fitbit_end_ts": "2026-05-05T08:50:00+00:00",
+          "whoop_end_ts": "2026-05-05T08:51:57.01+00:00"
+        },
+        {
+          "fitbit_id": "019fdd62-44ab-73e4-8c9e-b604d98043dc",
+          "whoop_id": "01a023e1-fb16-76e5-96b8-260103d7712f",
+          "fitbit_start_ts": "2026-05-06T00:17:44.718+00:00",
+          "whoop_start_ts": "2026-05-06T00:17:44.718+00:00",
+          "fitbit_end_ts": "2026-05-06T06:40:59.111+00:00",
+          "whoop_end_ts": "2026-05-06T06:40:59.111+00:00"
+        },
+        {
+          "fitbit_id": "019fdd62-44aa-74d3-91de-63a7601a6476",
+          "whoop_id": "01a023e1-fb15-764f-8a72-36f0647cc2ad",
+          "fitbit_start_ts": "2026-05-06T23:27:10.246+00:00",
+          "whoop_start_ts": "2026-05-06T23:27:10.246+00:00",
+          "fitbit_end_ts": "2026-05-07T07:46:13.666+00:00",
+          "whoop_end_ts": "2026-05-07T07:46:13.666+00:00"
+        },
+        {
+          "fitbit_id": "019fdd62-44a9-7687-b5c3-007e336309b8",
+          "whoop_id": "01a023e1-fb14-766e-b9e1-606cfd0c3886",
+          "fitbit_start_ts": "2026-05-08T00:56:32.472+00:00",
+          "whoop_start_ts": "2026-05-08T00:56:32.472+00:00",
+          "fitbit_end_ts": "2026-05-08T08:43:33.849+00:00",
+          "whoop_end_ts": "2026-05-08T08:43:33.849+00:00"
+        },
+        {
+          "fitbit_id": "019fdd62-44a8-77a8-9d24-17f92adcdab8",
+          "whoop_id": "01a023e1-fb13-73f6-ba4c-a7e76fca082b",
+          "fitbit_start_ts": "2026-05-09T01:13:34.723+00:00",
+          "whoop_start_ts": "2026-05-09T01:13:34.723+00:00",
+          "fitbit_end_ts": "2026-05-09T08:38:50.261+00:00",
+          "whoop_end_ts": "2026-05-09T08:38:50.261+00:00"
+        },
+        {
+          "fitbit_id": "019fdd62-44a7-78c2-af3b-ab5df5f738e3",
+          "whoop_id": "01a023e1-fb12-73c6-aa05-588ca590df3a",
+          "fitbit_start_ts": "2026-05-09T23:12:41.77+00:00",
+          "whoop_start_ts": "2026-05-09T23:12:41.77+00:00",
+          "fitbit_end_ts": "2026-05-10T08:59:21.338+00:00",
+          "whoop_end_ts": "2026-05-10T08:59:21.338+00:00"
+        },
+        {
+          "fitbit_id": "019fdd62-44a6-77aa-a3c0-149f280e495a",
+          "whoop_id": "01a023e1-fb11-7361-9476-8a1efe55fb1c",
+          "fitbit_start_ts": "2026-05-10T21:47:18.194+00:00",
+          "whoop_start_ts": "2026-05-10T21:47:18.194+00:00",
+          "fitbit_end_ts": "2026-05-11T07:04:04.505+00:00",
+          "whoop_end_ts": "2026-05-11T07:04:04.505+00:00"
+        },
+        {
+          "fitbit_id": "019fdd61-fc85-730d-939b-5fbe0be276c5",
+          "whoop_id": "01a023e1-fb10-7378-8e24-db5e9c46cfe8",
+          "fitbit_start_ts": "2026-05-11T22:47:18.58+00:00",
+          "whoop_start_ts": "2026-05-11T22:47:18.58+00:00",
+          "fitbit_end_ts": "2026-05-12T03:14:23.554+00:00",
+          "whoop_end_ts": "2026-05-12T03:14:23.554+00:00"
+        },
+        {
+          "fitbit_id": "019fdd61-fc84-7070-990d-4b896b4ae657",
+          "whoop_id": "01a023e1-fb0e-7066-ac62-64466058e2b3",
+          "fitbit_start_ts": "2026-05-12T22:52:06.051+00:00",
+          "whoop_start_ts": "2026-05-12T22:52:06.051+00:00",
+          "fitbit_end_ts": "2026-05-13T05:23:21.836+00:00",
+          "whoop_end_ts": "2026-05-13T05:23:21.836+00:00"
+        },
+        {
+          "fitbit_id": "019fdd61-fc82-7f50-b107-c4910ecf0ade",
+          "whoop_id": "01a023e1-fb0c-704e-8521-ce058fb858da",
+          "fitbit_start_ts": "2026-05-13T22:15:54.627+00:00",
+          "whoop_start_ts": "2026-05-13T22:15:54.627+00:00",
+          "fitbit_end_ts": "2026-05-14T04:54:23.597+00:00",
+          "whoop_end_ts": "2026-05-14T04:54:23.597+00:00"
+        },
+        {
+          "fitbit_id": "019fdd61-67eb-7150-b1d9-2dae5b3f7f8f",
+          "whoop_id": "01a023e1-fb0a-7daa-b67a-1aed547d8599",
+          "fitbit_start_ts": "2026-05-21T20:47:12.452+00:00",
+          "whoop_start_ts": "2026-05-21T20:47:12.452+00:00",
+          "fitbit_end_ts": "2026-05-22T05:51:20.686+00:00",
+          "whoop_end_ts": "2026-05-22T05:51:20.686+00:00"
+        },
+        {
+          "fitbit_id": "019fdd61-67e9-756b-8461-d8fa5210deef",
+          "whoop_id": "01a023e1-f3ae-72b0-96be-1d41aec6025d",
+          "fitbit_start_ts": "2026-05-24T22:36:00+00:00",
+          "whoop_start_ts": "2026-05-24T22:37:06.004+00:00",
+          "fitbit_end_ts": "2026-05-25T06:03:00+00:00",
+          "whoop_end_ts": "2026-05-25T05:49:12.458+00:00"
+        },
+        {
+          "fitbit_id": "01a03652-16b2-705b-b5e8-878fccff1280",
+          "whoop_id": "01a023e1-f3ac-7235-8bc9-81918e0749dc",
+          "fitbit_start_ts": "2026-05-26T00:12:52.291+00:00",
+          "whoop_start_ts": "2026-05-26T00:12:52.291+00:00",
+          "fitbit_end_ts": "2026-05-26T06:35:52.291+00:00",
+          "whoop_end_ts": "2026-05-26T06:35:52.291+00:00"
+        }
+      ]
+    }
+  }
+}

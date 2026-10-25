@@ -1,0 +1,177 @@
+{
+  "input": "data/readiness_optihealth_wide.csv",
+  "n_readiness_days": 317,
+  "date_min": "2025-10-24",
+  "date_max": "2026-10-21",
+  "associations_with_fitbit_readiness": {
+    "whoop_recovery": {
+      "n": 61,
+      "raw_pearson_r": 0.7351616660242358,
+      "raw_spearman_rho": 0.7657870279933059,
+      "season_adjusted_pearson_r": 0.7478632911842585,
+      "season_adjusted_spearman_rho": 0.7937070333157059
+    },
+    "hrv": {
+      "n": 317,
+      "raw_pearson_r": 0.7427593132941694,
+      "raw_spearman_rho": 0.7932138119096649,
+      "season_adjusted_pearson_r": 0.7497610628287267,
+      "season_adjusted_spearman_rho": 0.808562856791978
+    },
+    "hr_resting": {
+      "n": 317,
+      "raw_pearson_r": -0.5070754509929615,
+      "raw_spearman_rho": -0.5582398101624406,
+      "season_adjusted_pearson_r": -0.5089750657953844,
+      "season_adjusted_spearman_rho": -0.5515615028942671
+    },
+    "respiratory": {
+      "n": 316,
+      "raw_pearson_r": -0.3187747505816341,
+      "raw_spearman_rho": -0.33588973606887806,
+      "season_adjusted_pearson_r": -0.3682148036888612,
+      "season_adjusted_spearman_rho": -0.36659460014489376
+    },
+    "respiratory_min": {
+      "n": 315,
+      "raw_pearson_r": -0.02971212542212941,
+      "raw_spearman_rho": -0.39616115217057174,
+      "season_adjusted_pearson_r": -0.0719015421686552,
+      "season_adjusted_spearman_rho": -0.15524853818008702
+    },
+    "sleep_total": {
+      "n": 316,
+      "raw_pearson_r": -0.039705942993593944,
+      "raw_spearman_rho": -0.014622046910473146,
+      "season_adjusted_pearson_r": -0.02904408825532664,
+      "season_adjusted_spearman_rho": -0.00742684487443502
+    },
+    "sleep_deep": {
+      "n": 315,
+      "raw_pearson_r": 0.0025928280160308088,
+      "raw_spearman_rho": 0.011309810100421636,
+      "season_adjusted_pearson_r": 0.0145290234712731,
+      "season_adjusted_spearman_rho": 0.01539143755543014
+    },
+    "sleep_rem": {
+      "n": 315,
+      "raw_pearson_r": 0.012636833689897809,
+      "raw_spearman_rho": 0.014642875580935914,
+      "season_adjusted_pearson_r": 0.02108243939998547,
+      "season_adjusted_spearman_rho": 0.0329098566782998
+    },
+    "sleep_awake": {
+      "n": 316,
+      "raw_pearson_r": 0.0781691619181211,
+      "raw_spearman_rho": 0.06218762866004237,
+      "season_adjusted_pearson_r": 0.08788808407881142,
+      "season_adjusted_spearman_rho": 0.07984438194876244
+    },
+    "strain": {
+      "n": 65,
+      "raw_pearson_r": 0.2003927302845007,
+      "raw_spearman_rho": 0.1789108758195165,
+      "season_adjusted_pearson_r": 0.15320851681803913,
+      "season_adjusted_spearman_rho": 0.12111013986013985
+    },
+    "oura_readiness": {
+      "n": 56,
+      "raw_pearson_r": 0.6308712161065174,
+      "raw_spearman_rho": 0.6516572135580124,
+      "season_adjusted_pearson_r": 0.6079066139374588,
+      "season_adjusted_spearman_rho": 0.5885167464114833
+    }
+  },
+  "associations_with_whoop_recovery": {
+    "hrv": {
+      "n": 89,
+      "raw_pearson_r": 0.560692542911864,
+      "raw_spearman_rho": 0.6809045652952043,
+      "season_adjusted_pearson_r": 0.565905217040534,
+      "season_adjusted_spearman_rho": 0.7500340483486553
+    },
+    "hr_resting": {
+      "n": 94,
+      "raw_pearson_r": -0.4007074856892668,
+      "raw_spearman_rho": -0.45277729747005635,
+      "season_adjusted_pearson_r": -0.3958575322254707,
+      "season_adjusted_spearman_rho": -0.47251381714409574
+    },
+    "respiratory": {
+      "n": 94,
+      "raw_pearson_r": -0.5310498763142606,
+      "raw_spearman_rho": -0.4831523903209241,
+      "season_adjusted_pearson_r": -0.5477727510677805,
+      "season_adjusted_spearman_rho": -0.5633565726257992
+    },
+    "sleep_total": {
+      "n": 94,
+      "raw_pearson_r": 0.4189265034870494,
+      "raw_spearman_rho": 0.3518840602386621,
+      "season_adjusted_pearson_r": 0.4621733722438077,
+      "season_adjusted_spearman_rho": 0.38519669111006755
+    },
+    "sleep_deep": {
+      "n": 81,
+      "raw_pearson_r": 0.21986620201674795,
+      "raw_spearman_rho": 0.1801359470574416,
+      "season_adjusted_pearson_r": 0.2331589087137687,
+      "season_adjusted_spearman_rho": 0.2028906955736224
+    },
+    "sleep_rem": {
+      "n": 81,
+      "raw_pearson_r": 0.17738217946308393,
+      "raw_spearman_rho": 0.1362506217988328,
+      "season_adjusted_pearson_r": 0.1933189010694937,
+      "season_adjusted_spearman_rho": 0.12938121047877144
+    }
+  },
+  "associations_with_whoop_minus_fitbit_gap": {
+    "hrv": {
+      "n": 61,
+      "pearson_r": -0.22129679169568148,
+      "spearman_rho": -0.1702696701026757
+    },
+    "hr_resting": {
+      "n": 61,
+      "pearson_r": 0.08971072949911076,
+      "spearman_rho": 0.043172362549941265
+    },
+    "respiratory_min": {
+      "n": 61,
+      "pearson_r": 0.3293350902475162,
+      "spearman_rho": 0.3605110688373865
+    },
+    "sleep_total": {
+      "n": 61,
+      "pearson_r": 0.5997756297360725,
+      "spearman_rho": 0.36082196007559353
+    },
+    "sleep_deep": {
+      "n": 61,
+      "pearson_r": 0.19258249742826725,
+      "spearman_rho": 0.04936735915315336
+    },
+    "sleep_rem": {
+      "n": 61,
+      "pearson_r": 0.48904207918962467,
+      "spearman_rho": 0.28894332140599327
+    },
+    "sleep_awake": {
+      "n": 61,
+      "pearson_r": 0.05854150152486519,
+      "spearman_rho": -0.010351172322055631
+    },
+    "strain": {
+      "n": 52,
+      "pearson_r": -0.16325161484780043,
+      "spearman_rho": -0.2803323690827434
+    }
+  },
+  "interpretation": {
+    "strongest_autonomic_link": "Canonical OptiHealth HRV RMSSD has season-adjusted Spearman rho about 0.81 with Fitbit Readiness; resting HR is about -0.55.",
+    "sleep_result": "Canonical total sleep and stage minutes are essentially uncorrelated with Fitbit Readiness in this window, unlike the autonomic channels.",
+    "score_gap": "On the 61 paired WHOOP days, the WHOOP-minus-Fitbit gap grows with total sleep and REM in this exploratory comparison; this is a score-decomposition clue, not causality.",
+    "pipeline": "The latest published run predates the Fitbit metric registration/catalog generation; the current worker frame and multi-horizon correlation path include Fitbit Readiness."
+  }
+}

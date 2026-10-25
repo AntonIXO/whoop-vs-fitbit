@@ -1,0 +1,16 @@
+{
+  "run_id": "ddcc007f-57ca-443f-b4c1-14e39904897e",
+  "published_at": "2026-10-24T03:49:44.407527+00:00",
+  "as_of": "2026-10-24T03:27:28.300007+00:00",
+  "window": ["2024-10-24", "2026-10-24"],
+  "card_count": 594,
+  "engine_revision": "sha256:f51cbf4b29e5264e87f4bbf39e9faa5900f2a7e33db9b82509ec84e246441b74",
+  "degraded_stages": [],
+  "published_series_contains": ["whoop_recovery_score", "hrv_rmssd", "hr_resting", "respiratory_rate", "sleep_duration_total", "sleep_duration_deep", "sleep_duration_rem", "oura_readiness_score"],
+  "published_series_does_not_contain": ["fitbit_readiness_score", "fitbit_resilience_score"],
+  "fitbit_readiness_rows_in_metric_daily": 317,
+  "registration_migration_file": "/opt/optihealth_db/deploy/post-auth/0092_fitbit_readiness_resilience.sql",
+  "registration_migration_mtime_msk": "2026-10-24T21:38:53+03:00",
+  "catalog_generation_mtime_msk": "2026-10-24T21:39:10+03:00",
+  "root_cause": "The published run was at 2026-10-24T03:49:44Z, before the Fitbit Readiness metric registration and generated-catalog update at 2026-10-24T21:38–21:39 MSK. The current worker frame now contains 317 readiness rows and the current multi-horizon correlation path emits Readiness cards; the old snapshot was simply pre-registration and has not been republished yet."
+}

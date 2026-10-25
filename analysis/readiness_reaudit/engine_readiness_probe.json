@@ -1,0 +1,19 @@
+{
+  "probe": "current worker data_loader + multi_horizon AutoCorrelationDiscovery; no publication",
+  "read_only_publication": true,
+  "user_id": "9e73d06e-1006-4266-bde7-85659f5de69d",
+  "daily_frame_shape": [731, 293],
+  "fitbit_readiness_nonnull": 317,
+  "whoop_recovery_nonnull": 94,
+  "family": "correlation_discovery",
+  "candidate_counts_by_horizon": {"28": 1942, "90": 5731, "365": 7083},
+  "significant_counts_by_horizon": {"28": 331, "90": 373, "365": 412},
+  "deduplicated_insight_count": 145,
+  "readiness_cards_emitted_in_probe": [
+    {"metric": "hrv_rmssd", "n": 316, "calendar_adjusted_r": 0.80, "direction": "positive", "horizons": [28, 90, 365]},
+    {"metric": "hr_min", "n": 316, "calendar_adjusted_r": -0.64, "direction": "negative", "horizons": [28, 90, 365]},
+    {"metric": "hr_resting", "n": 316, "calendar_adjusted_r": -0.55, "direction": "negative", "horizons": [28, 90, 365]},
+    {"metric": "respiratory_rate_min", "n": 296, "calendar_adjusted_r": -0.47, "direction": "negative", "horizons": [90, 365]}
+  ],
+  "root_cause": "The old published snapshot was created before 0092_fitbit_readiness_resilience.sql and the generated catalog update. The current code path does not exclude Fitbit Readiness; it loads it and emits cards."
+}

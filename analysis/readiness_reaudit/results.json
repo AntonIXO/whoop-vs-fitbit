@@ -1,0 +1,99 @@
+{
+  "input": "data/readiness_recovery_paired.csv",
+  "paired_n": 61,
+  "date_min": "2025-10-24",
+  "date_max": "2026-05-25",
+  "cohorts": {
+    "2754": {
+      "n": 57,
+      "readiness_mean": 56.0,
+      "recovery_mean": 64.24561403508773,
+      "recovery_minus_readiness_mean": 8.24561403508772,
+      "mae": 12.982456140350877,
+      "rmse": 15.956080070871735,
+      "pearson_r": 0.7590434702366584,
+      "spearman_rho": 0.8118866791939177,
+      "readiness_low_n": 7,
+      "readiness_high_n": 19,
+      "recovery_red_n": 3,
+      "recovery_green_n": 29,
+      "exact_equal_n": 2,
+      "whoop_higher_n": 44,
+      "fitbit_higher_n": 11
+    },
+    "2757": {
+      "n": 4,
+      "readiness_mean": 57.25,
+      "recovery_mean": 81.0,
+      "recovery_minus_readiness_mean": 23.75,
+      "mae": 23.75,
+      "rmse": 26.688012290165037,
+      "pearson_r": 0.13186193956778958,
+      "spearman_rho": -0.39999999999999997,
+      "readiness_low_n": 0,
+      "readiness_high_n": 2,
+      "recovery_red_n": 0,
+      "recovery_green_n": 4,
+      "exact_equal_n": 0,
+      "whoop_higher_n": 4,
+      "fitbit_higher_n": 0
+    }
+  },
+  "pooled": {
+    "n": 61,
+    "readiness_mean": 56.08196721311475,
+    "recovery_mean": 65.34426229508196,
+    "recovery_minus_readiness_mean": 9.262295081967213,
+    "mae": 13.688524590163935,
+    "rmse": 16.870286226885696,
+    "pearson_r": 0.7351616660242358,
+    "spearman_rho": 0.7657870279933059,
+    "readiness_low_n": 7,
+    "readiness_high_n": 21,
+    "recovery_red_n": 3,
+    "recovery_green_n": 33,
+    "exact_equal_n": 2,
+    "whoop_higher_n": 48,
+    "fitbit_higher_n": 11
+  },
+  "category_cross_tab": {
+    "high/green": 20,
+    "high/yellow": 1,
+    "low/red": 1,
+    "low/yellow": 6,
+    "moderate/green": 13,
+    "moderate/red": 2,
+    "moderate/yellow": 18
+  },
+  "same_ordinal_band_n": 39,
+  "same_ordinal_band_fraction": 0.639344262295082,
+  "bootstrap": {
+    "iterations": 10000,
+    "block_days": 7,
+    "seed": 20261024,
+    "ci95": {
+      "spearman_rho": [
+        0.6232073750811059,
+        0.8547833845146994
+      ],
+      "pearson_r": [
+        0.5983320596879691,
+        0.847628817744255
+      ],
+      "recovery_minus_readiness_mean": [
+        5.770491803278689,
+        12.885245901639344
+      ],
+      "mae": [
+        11.540983606557377,
+        15.950819672131148
+      ]
+    }
+  },
+  "interpretation": {
+    "score_concordance": "moderate-to-strong monotonic agreement in the larger 2754 cohort, with systematic level offset",
+    "offset": "WHOOP Recovery is higher than Fitbit Readiness on most paired days",
+    "coverage": "Fitbit readiness has 317 rows, but only 61 same-day pairs with the two WHOOP Recovery cohorts",
+    "resilience": "No fitbit_resilience_score rows are present in the paired extract; no resilience comparison is claimed"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "retrieved_at": "2026-10-15",
+  "latest_engine_run": {
+    "as_of": "2026-10-15T09:55:41.181757+00:00",
+    "window": ["2024-10-15", "2026-10-15"],
+    "card_count": 516,
+    "whoop_sources": {"2754": "WHOOP 31695515, inactive", "2757": "WHOOP 36797758, active"}
+  },
+  "new_whoop_datatypes": {
+    "daily": ["whoop_cycle_average_hr", "whoop_cycle_energy_kcal", "whoop_cycle_max_hr", "whoop_recovery_score", "whoop_strain_daily", "hr_resting", "activity_steps"],
+    "sleep_series_p1": ["whoop_sleep_consistency", "whoop_sleep_disturbance_count", "whoop_sleep_efficiency", "whoop_sleep_need_baseline", "whoop_sleep_need_from_debt", "whoop_sleep_need_from_nap", "whoop_sleep_need_from_strain", "whoop_sleep_performance"],
+    "workout_series_p1": ["whoop_workout_hr_zone_0_minutes", "whoop_workout_hr_zone_1_minutes", "whoop_workout_hr_zone_2_minutes", "whoop_workout_hr_zone_3_minutes", "whoop_workout_hr_zone_4_minutes", "whoop_workout_hr_zone_5_minutes"],
+    "p2_gap": "The active P2 source 2757 has daily cycle/recovery/strain metrics, but no WHOOP sleep-performance or workout-zone series in the queried May window."
+  },
+  "latest_engine_associations": [
+    ["whoop_cycle_energy_kcal", "whoop_strain_daily", 0.76, 0.80, 61],
+    ["whoop_cycle_max_hr", "whoop_strain_daily", 0.75, 0.74, 61],
+    ["whoop_cycle_average_hr", "whoop_strain_daily", 0.59, 0.56, 61],
+    ["whoop_sleep_consistency", "whoop_sleep_performance", 0.71, null, 69],
+    ["whoop_recovery_score", "whoop_sleep_performance", 0.47, null, 69],
+    ["whoop_sleep_efficiency", "sleep_efficiency_percentage", 0.46, null, 69],
+    ["whoop_sleep_disturbance_count", "whoop_sleep_performance", 0.43, null, 69]
+  ],
+  "latest_engine_lagged": [
+    ["whoop_strain_daily", "whoop_sleep_need_from_strain", 1, 0.99, 60],
+    ["whoop_cycle_energy_kcal", "whoop_sleep_need_from_strain", 1, 0.81, 60],
+    ["whoop_workout_hr_zone_3_minutes", "whoop_sleep_need_from_strain", 1, 0.80, 60],
+    ["whoop_cycle_max_hr", "whoop_sleep_need_from_strain", 1, 0.71, 60],
+    ["whoop_cycle_average_hr", "whoop_sleep_need_from_strain", 1, 0.55, 60]
+  ],
+  "may_hidden_fitbit_correlations": [
+    ["whoop_recovery_score", "hidden hr_avg", -0.762, 16],
+    ["whoop_recovery_score", "hidden hrv_rmssd_avg", 0.784, 14],
+    ["whoop_recovery_score", "hidden hrv_rmssd_max", 0.808, 14],
+    ["whoop_recovery_score", "hidden blood_oxygen_spo2_avg", 0.487, 17],
+    ["whoop_cycle_average_hr", "hidden hrv_rmssd_min", -0.655, 19],
+    ["whoop_cycle_average_hr", "hidden hr_max", 0.551, 21],
+    ["whoop_cycle_energy_kcal", "hidden body_temperature_avg", 0.548, 22],
+    ["whoop_cycle_energy_kcal", "hidden hrv_rmssd_min", 0.612, 19],
+    ["whoop_cycle_energy_kcal", "hidden respiratory_rate_avg", -0.486, 22],
+    ["whoop_strain_daily", "hidden respiratory_rate_avg", -0.520, 22]
+  ],
+  "may_hidden_fitbit_inventory": [
+    "hr_avg", "hr_min", "hr_max", "hrv_rmssd_avg", "hrv_rmssd_min", "hrv_rmssd_max",
+    "respiratory_rate_avg", "respiratory_rate_min", "respiratory_rate_max",
+    "blood_oxygen_spo2_avg", "blood_oxygen_spo2_min", "blood_oxygen_spo2_max",
+    "body_temperature_avg", "body_temperature_min", "body_temperature_max",
+    "body_temperature_deviation_avg", "body_temperature_deviation_min", "body_temperature_deviation_max",
+    "bioclarity_phase_h"
+  ],
+  "curves": {
+    "whoop_related_current": [
+      "whoop_strain_daily vs environment_temperature_min",
+      "whoop_strain_daily vs body_temperature",
+      "whoop_recovery_score vs respiratory_rate_min",
+      "whoop_recovery_score vs body_temperature",
+      "activity_steps vs whoop_recovery_score"
+    ],
+    "interpretation": "Current dose-response cards report curved-vs-linear fits but no stable optimum or release-calibrated significance; they are not promoted as validated dose-response findings."
+  }
+}

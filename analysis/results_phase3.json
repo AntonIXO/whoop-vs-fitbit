@@ -1,0 +1,54 @@
+{
+  "Q6_workout_detection": {
+    "days_both_logged": 44,
+    "days_only_fitbit": 0,
+    "days_only_whoop": 31,
+    "fitbit_sessions_per_day": 4.59,
+    "whoop_sessions_per_day": 3.27,
+    "fitbit_total_sessions": 202,
+    "whoop_total_sessions": 144,
+    "ratio": 1.4,
+    "session_count_rho": 0.492,
+    "session_count_p": 0.0045,
+    "wilcoxon_p": 3.7674293526188278e-06,
+    "active_minutes_fitbit": 159.1,
+    "active_minutes_whoop": 101.2,
+    "active_minutes_rho": 0.305,
+    "active_minutes_p": 0.05295,
+    "n_minutes": 44,
+    "kcal_fitbit": 1104.0,
+    "kcal_whoop": 458.0,
+    "kcal_rho": 0.108,
+    "kcal_p": 0.49004,
+    "n_kcal": 43
+  },
+  "Q7_ecg_selfcheck": {
+    "n": 15,
+    "mean_abs_error_bpm": 0.794,
+    "note": "our derived BPM vs the device's own ECG BPM label \u2014 validates the pipeline"
+  },
+  "Q7_rhr_vs_ecg": {
+    "Fitbit": {
+      "n": 14,
+      "rho": 0.485,
+      "p_iid": 0.0788,
+      "mean_ecg": 52.1,
+      "mean_device": 48.0,
+      "bias": -4.1
+    },
+    "WHOOP": {
+      "n": 8,
+      "rho": 0.712,
+      "p_iid": 0.0476,
+      "mean_ecg": 51.2,
+      "mean_device": 42.9,
+      "bias": -8.3
+    }
+  },
+  "Q7_ecg_rmssd_vs_whoop_recovery": {
+    "n": 7,
+    "rho": -0.054,
+    "p_iid": 0.9084,
+    "note": "ECG spot RMSSD is a WAKING measure; WHOOP Recovery is built on NOCTURNAL HRV. Engine rule: never pool the two. Reported as descriptive only."
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "citation": "Schyvens et al. 2025, SLEEP Advances 6(2):zpaf021, n=62 in-lab PSG",
+  "tests": {
+    "deep": {
+      "n": 68,
+      "observed_gap_min": 26.25,
+      "ci95": [
+        22.54,
+        32.03
+      ],
+      "predicted_from_lab_charge5": 33.68,
+      "predicted_from_lab_sense": 35.38,
+      "charge5_prediction_inside_ci": false,
+      "sense_prediction_inside_ci": false,
+      "residual_vs_charge5": -7.43
+    },
+    "rem": {
+      "n": 68,
+      "observed_gap_min": -2.31,
+      "ci95": [
+        -6.51,
+        2.69
+      ],
+      "predicted_from_lab_charge5": 15.52,
+      "predicted_from_lab_sense": 12.42,
+      "charge5_prediction_inside_ci": false,
+      "sense_prediction_inside_ci": false,
+      "residual_vs_charge5": -17.83
+    },
+    "tst": {
+      "n": 68,
+      "observed_gap_min": -9.49,
+      "ci95": [
+        -13.5,
+        -2.93
+      ],
+      "predicted_from_lab_charge5": 13.34,
+      "predicted_from_lab_sense": 18.15,
+      "charge5_prediction_inside_ci": false,
+      "sense_prediction_inside_ci": false,
+      "residual_vs_charge5": -22.83
+    }
+  },
+  "decomposition": {
+    "n": 68,
+    "total_deep_gap_min": 26.25,
+    "explained_by_longer_night_min": -2.02,
+    "reassignment_min": 28.27,
+    "pct_reassignment": 107.7,
+    "note": "WHOOP records a SHORTER night here, so duration explains a negative amount: 100%+ of the deep-sleep gap is stage REASSIGNMENT, not extra sleep."
+  },
+  "kappa_context": {
+    "whoop4_kappa": 0.37,
+    "fitbit_charge5_kappa": 0.41,
+    "fitbit_sense_kappa": 0.42,
+    "apple_watch8_kappa": 0.53,
+    "interpretation": "4-stage kappa 0.37-0.42 is 'fair' agreement with PSG. Two devices each at kappa~0.4 against truth CANNOT agree with each other better than that, which is what our rho=0.52 on deep sleep shows from the other direction.",
+    "source": "Schyvens et al. 2025, SLEEP Advances 6(2):zpaf021, n=62 in-lab PSG"
+  }
+}

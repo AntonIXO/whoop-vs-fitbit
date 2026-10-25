@@ -1,0 +1,14 @@
+{
+  "outcome": "next-day resting HR",
+  "source_specific_outcomes": {
+    "fitbit_rhr": "Fitbit source 35 hr_resting",
+    "whoop_rhr": "WHOOP source 2754 hr_resting"
+  },
+  "rows": [
+    {"predictor": "Fitbit deep sleep", "outcome": "next-day Fitbit RHR", "n": 67, "spearman_rho": -0.319, "block_permutation_p": 0.006},
+    {"predictor": "WHOOP deep sleep", "outcome": "next-day Fitbit RHR", "n": 67, "spearman_rho": 0.041, "block_permutation_p": 0.7211},
+    {"predictor": "Fitbit deep sleep", "outcome": "next-day WHOOP RHR", "n": 65, "spearman_rho": -0.239, "block_permutation_p": 0.0589},
+    {"predictor": "WHOOP deep sleep", "outcome": "next-day WHOOP RHR", "n": 65, "spearman_rho": -0.050, "block_permutation_p": 0.7052}
+  ],
+  "interpretation": "The original asymmetry is outcome-specific: Fitbit deep sleep has the strongest association with next-day Fitbit RHR, while its association with next-day WHOOP RHR is weaker. WHOOP deep sleep is near zero for both outcomes."
+}

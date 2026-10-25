@@ -1,0 +1,347 @@
+{
+  "family": [
+    {
+      "label": "Q1 Fitbit deep vs nocturnal HRV",
+      "group": "convergent",
+      "n": 67,
+      "rho": 0.13441521025254738,
+      "p": 0.24302788844621515,
+      "block_len": 5,
+      "q": 0.8641,
+      "survives": false
+    },
+    {
+      "label": "Q1 Fitbit deep vs HR nadir",
+      "group": "convergent",
+      "n": 68,
+      "rho": -0.268875812424669,
+      "p": 0.02848575712143928,
+      "block_len": 5,
+      "q": 0.2279,
+      "survives": false
+    },
+    {
+      "label": "Q1 Fitbit deep vs mean night HR",
+      "group": "convergent",
+      "n": 68,
+      "rho": -0.30933722001968406,
+      "p": 0.010994502748625687,
+      "block_len": 5,
+      "q": 0.1386,
+      "survives": false
+    },
+    {
+      "label": "Q1 Fitbit deep vs SpO2 instability",
+      "group": "convergent",
+      "n": 59,
+      "rho": 0.04858868162515849,
+      "p": 0.7051792828685259,
+      "block_len": 4,
+      "q": 0.9668,
+      "survives": false
+    },
+    {
+      "label": "Q1 WHOOP deep vs nocturnal HRV",
+      "group": "convergent",
+      "n": 67,
+      "rho": 0.10929999410827851,
+      "p": 0.3745019920318725,
+      "block_len": 5,
+      "q": 0.9668,
+      "survives": false
+    },
+    {
+      "label": "Q1 WHOOP deep vs HR nadir",
+      "group": "convergent",
+      "n": 68,
+      "rho": -0.24750131085968138,
+      "p": 0.041305796135909394,
+      "block_len": 5,
+      "q": 0.2644,
+      "survives": false
+    },
+    {
+      "label": "Q1 WHOOP deep vs mean night HR",
+      "group": "convergent",
+      "n": 68,
+      "rho": -0.2884859993141263,
+      "p": 0.012993503248375811,
+      "block_len": 5,
+      "q": 0.1386,
+      "survives": false
+    },
+    {
+      "label": "Q1 WHOOP deep vs SpO2 instability",
+      "group": "convergent",
+      "n": 59,
+      "rho": 0.07982457505293628,
+      "p": 0.450199203187251,
+      "block_len": 4,
+      "q": 0.9668,
+      "survives": false
+    },
+    {
+      "label": "Q1 Fitbit REM vs nocturnal HRV",
+      "group": "convergent",
+      "n": 67,
+      "rho": 0.005668606373020393,
+      "p": 0.9641434262948207,
+      "block_len": 5,
+      "q": 0.988,
+      "survives": false
+    },
+    {
+      "label": "Q1 WHOOP REM vs nocturnal HRV",
+      "group": "convergent",
+      "n": 67,
+      "rho": -0.03505060183029745,
+      "p": 0.7171314741035857,
+      "block_len": 5,
+      "q": 0.9668,
+      "survives": false
+    },
+    {
+      "label": "Q1 Fitbit TST vs nocturnal HRV",
+      "group": "convergent",
+      "n": 67,
+      "rho": 0.0786406992684374,
+      "p": 0.549800796812749,
+      "block_len": 5,
+      "q": 0.9668,
+      "survives": false
+    },
+    {
+      "label": "Q1 WHOOP TST vs nocturnal HRV",
+      "group": "convergent",
+      "n": 67,
+      "rho": 0.13353553907748875,
+      "p": 0.2868525896414343,
+      "block_len": 5,
+      "q": 0.9179,
+      "survives": false
+    },
+    {
+      "label": "Q2 Fitbit deep -> next-day RHR",
+      "group": "predictive",
+      "n": 67,
+      "rho": -0.3189303781709313,
+      "p": 0.005997001499250375,
+      "block_len": 5,
+      "q": 0.1386,
+      "survives": false
+    },
+    {
+      "label": "Q2 Fitbit deep -> next-day Recovery",
+      "group": "predictive",
+      "n": 65,
+      "rho": 0.06958537465390546,
+      "p": 0.5258964143426295,
+      "block_len": 5,
+      "q": 0.9668,
+      "survives": false
+    },
+    {
+      "label": "Q2 Fitbit deep -> next-day steps",
+      "group": "predictive",
+      "n": 68,
+      "rho": 0.18269644848588798,
+      "p": 0.1437125748502994,
+      "block_len": 5,
+      "q": 0.7665,
+      "survives": false
+    },
+    {
+      "label": "Q2 WHOOP deep -> next-day RHR",
+      "group": "predictive",
+      "n": 67,
+      "rho": 0.04133473966599668,
+      "p": 0.7211155378486056,
+      "block_len": 5,
+      "q": 0.9668,
+      "survives": false
+    },
+    {
+      "label": "Q2 WHOOP deep -> next-day Recovery",
+      "group": "predictive",
+      "n": 65,
+      "rho": -0.006551173600866443,
+      "p": 0.9482071713147411,
+      "block_len": 5,
+      "q": 0.988,
+      "survives": false
+    },
+    {
+      "label": "Q2 WHOOP deep -> next-day steps",
+      "group": "predictive",
+      "n": 68,
+      "rho": 0.08782333427190485,
+      "p": 0.5059760956175299,
+      "block_len": 5,
+      "q": 0.9668,
+      "survives": false
+    },
+    {
+      "label": "Q2 Fitbit TST -> next-day RHR",
+      "group": "predictive",
+      "n": 67,
+      "rho": -0.04382953250936579,
+      "p": 0.701195219123506,
+      "block_len": 5,
+      "q": 0.9668,
+      "survives": false
+    },
+    {
+      "label": "Q2 Fitbit TST -> next-day Recovery",
+      "group": "predictive",
+      "n": 65,
+      "rho": 0.01933734999723425,
+      "p": 0.8804780876494024,
+      "block_len": 5,
+      "q": 0.988,
+      "survives": false
+    },
+    {
+      "label": "Q2 WHOOP TST -> next-day RHR",
+      "group": "predictive",
+      "n": 67,
+      "rho": -0.0117058950677291,
+      "p": 0.9163346613545816,
+      "block_len": 5,
+      "q": 0.988,
+      "survives": false
+    },
+    {
+      "label": "Q2 WHOOP TST -> next-day Recovery",
+      "group": "predictive",
+      "n": 65,
+      "rho": 0.022726032020491806,
+      "p": 0.848605577689243,
+      "block_len": 5,
+      "q": 0.988,
+      "survives": false
+    },
+    {
+      "label": "Q3 deep-sleep gap vs bedtime hour",
+      "group": "disagreement",
+      "n": 68,
+      "rho": 0.045698900581987556,
+      "p": 0.7250996015936255,
+      "block_len": 5,
+      "q": 0.9668,
+      "survives": false
+    },
+    {
+      "label": "Q3 deep-sleep gap vs time in bed (Fitbit)",
+      "group": "disagreement",
+      "n": 68,
+      "rho": -0.06461715147434417,
+      "p": 0.6454183266932271,
+      "block_len": 5,
+      "q": 0.9668,
+      "survives": false
+    },
+    {
+      "label": "Q3 deep-sleep gap vs Fitbit awakenings",
+      "group": "disagreement",
+      "n": 68,
+      "rho": -0.07716614805645343,
+      "p": 0.5298804780876494,
+      "block_len": 5,
+      "q": 0.9668,
+      "survives": false
+    },
+    {
+      "label": "Q3 deep-sleep gap vs Fitbit efficiency",
+      "group": "disagreement",
+      "n": 68,
+      "rho": -0.029328371367206004,
+      "p": 0.7808764940239044,
+      "block_len": 5,
+      "q": 0.988,
+      "survives": false
+    },
+    {
+      "label": "Q3 deep-sleep gap vs onset offset (min)",
+      "group": "disagreement",
+      "n": 68,
+      "rho": -0.15309562605615737,
+      "p": 0.20717131474103587,
+      "block_len": 5,
+      "q": 0.8641,
+      "survives": false
+    },
+    {
+      "label": "Q3 deep-sleep gap vs nocturnal HRV",
+      "group": "disagreement",
+      "n": 67,
+      "rho": 0.0008583777452687664,
+      "p": 0.9880478087649402,
+      "block_len": 5,
+      "q": 0.988,
+      "survives": false
+    },
+    {
+      "label": "Q3 deep-sleep gap vs mean night HR",
+      "group": "disagreement",
+      "n": 68,
+      "rho": -0.042159533840358636,
+      "p": 0.7211155378486056,
+      "block_len": 5,
+      "q": 0.9668,
+      "survives": false
+    },
+    {
+      "label": "Q3 deep-sleep gap vs prior-day steps",
+      "group": "disagreement",
+      "n": 68,
+      "rho": -0.034388279187720056,
+      "p": 0.8047808764940239,
+      "block_len": 5,
+      "q": 0.988,
+      "survives": false
+    },
+    {
+      "label": "Q3 deep-sleep gap vs prior-day strain",
+      "group": "disagreement",
+      "n": 65,
+      "rho": -0.08010232064259777,
+      "p": 0.545816733067729,
+      "block_len": 5,
+      "q": 0.9668,
+      "survives": false
+    },
+    {
+      "label": "Q3 deep-sleep gap vs TST disagreement",
+      "group": "disagreement",
+      "n": 68,
+      "rho": 0.17090679648904808,
+      "p": 0.21756487025948104,
+      "block_len": 5,
+      "q": 0.8641,
+      "survives": false
+    }
+  ],
+  "derived": {
+    "Q4_partial_gap_vs_bedtime_controlling_TSTgap": {
+      "r": 0.04709433967544581,
+      "p": 0.6852589641434262,
+      "n": 68
+    },
+    "Q4_deep_share": {
+      "fitbit_mean_pct": 21.31,
+      "whoop_mean_pct": 27.78,
+      "share_gap_pp": 6.46,
+      "minutes_gap": 26.25,
+      "gap_if_only_duration": -2.02
+    },
+    "Q5_reliability": {
+      "inter_device_rho": 0.523,
+      "max_observable_rho": 0.723,
+      "note": "Any correlation between a single device's deep sleep and a true outcome is attenuated by sqrt(reliability). With rho_dd as the reliability proxy, no downstream deep-sleep finding on ONE device can exceed this."
+    },
+    "Q5_n_required": {
+      "rho=0.3": 85,
+      "rho=0.5": 30
+    }
+  }
+}

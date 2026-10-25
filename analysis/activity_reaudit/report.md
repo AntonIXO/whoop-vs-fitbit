@@ -1,0 +1,254 @@
+# Fitbit vs WHOOP activity / pulse / strain audit (Anton)
+
+- User restriction: `9e73d06e-1006-4266-bde7-85659f5de69d` only.
+- Fresh read-only extraction from PostgreSQL; no production writes.
+- Missing values were not converted to zero. Calendar support was retained explicitly.
+
+## P1: 2025-10-08 to 2025-12-24
+- Calendar span: 78 days; daily rows: 216 WHOOP-source rows in the filtered view; workouts: 335; canonical sleep intervals: 80.
+
+### Complete metric inventory
+- `0:environment_precipitation_avg`: 78 observed days / 78 rows; observed days 2025-10-08 to 2025-12-24.
+- `0:environment_precipitation_min`: 78 observed days / 78 rows; observed days 2025-10-08 to 2025-12-24.
+- `0:environment_precipitation_max`: 78 observed days / 78 rows; observed days 2025-10-08 to 2025-12-24.
+- `0:environment_uv_index_avg`: 78 observed days / 78 rows; observed days 2025-10-08 to 2025-12-24.
+- `0:environment_uv_index_min`: 78 observed days / 78 rows; observed days 2025-10-08 to 2025-12-24.
+- `0:environment_uv_index_max`: 78 observed days / 78 rows; observed days 2025-10-08 to 2025-12-24.
+- `0:environment_air_quality_avg`: 78 observed days / 78 rows; observed days 2025-10-08 to 2025-12-24.
+- `0:environment_air_quality_min`: 78 observed days / 78 rows; observed days 2025-10-08 to 2025-12-24.
+- `0:environment_air_quality_max`: 78 observed days / 78 rows; observed days 2025-10-08 to 2025-12-24.
+- `0:environment_pressure_avg`: 78 observed days / 78 rows; observed days 2025-10-08 to 2025-12-24.
+- `0:environment_pressure_min`: 78 observed days / 78 rows; observed days 2025-10-08 to 2025-12-24.
+- `0:environment_pressure_max`: 78 observed days / 78 rows; observed days 2025-10-08 to 2025-12-24.
+- `0:environment_temperature_avg`: 78 observed days / 78 rows; observed days 2025-10-08 to 2025-12-24.
+- `0:environment_temperature_min`: 78 observed days / 78 rows; observed days 2025-10-08 to 2025-12-24.
+- `0:environment_temperature_max`: 78 observed days / 78 rows; observed days 2025-10-08 to 2025-12-24.
+- `0:environment_humidity_avg`: 78 observed days / 78 rows; observed days 2025-10-08 to 2025-12-24.
+- `0:environment_humidity_min`: 78 observed days / 78 rows; observed days 2025-10-08 to 2025-12-24.
+- `0:environment_humidity_max`: 78 observed days / 78 rows; observed days 2025-10-08 to 2025-12-24.
+- `0:environment_wind_speed_avg`: 78 observed days / 78 rows; observed days 2025-10-08 to 2025-12-24.
+- `0:environment_wind_speed_min`: 78 observed days / 78 rows; observed days 2025-10-08 to 2025-12-24.
+- `0:environment_wind_speed_max`: 78 observed days / 78 rows; observed days 2025-10-08 to 2025-12-24.
+- `0:workout_avg_hr_bpm`: 69 observed days / 69 rows; observed days 2025-10-08 to 2025-12-24.
+- `0:workout_duration_total_min`: 78 observed days / 78 rows; observed days 2025-10-08 to 2025-12-24.
+- `0:workout_had_any`: 78 observed days / 78 rows; observed days 2025-10-08 to 2025-12-24.
+- `0:workout_had_run`: 78 observed days / 78 rows; observed days 2025-10-08 to 2025-12-24.
+- `0:workout_had_strength`: 78 observed days / 78 rows; observed days 2025-10-08 to 2025-12-24.
+- `0:workout_had_walk`: 78 observed days / 78 rows; observed days 2025-10-08 to 2025-12-24.
+- `0:workout_sessions_count`: 78 observed days / 78 rows; observed days 2025-10-08 to 2025-12-24.
+- `35:activity_steps`: 78 observed days / 78 rows; observed days 2025-10-08 to 2025-12-24.
+- `35:calories_burned_total`: 78 observed days / 78 rows; observed days 2025-10-08 to 2025-12-24.
+- `2754:whoop_strain_daily`: 74 observed days / 74 rows; observed days 2025-10-08 to 2025-12-24.
+- `0:hydration_avg`: 17 observed days / 17 rows; observed days 2025-10-09 to 2025-11-18.
+- `0:hydration_min`: 17 observed days / 17 rows; observed days 2025-10-09 to 2025-11-18.
+- `0:hydration_max`: 17 observed days / 17 rows; observed days 2025-10-09 to 2025-11-18.
+- `0:hr_avg`: 77 observed days / 77 rows; observed days 2025-10-09 to 2025-12-24.
+- `0:hr_min`: 77 observed days / 77 rows; observed days 2025-10-09 to 2025-12-24.
+- `0:hr_max`: 77 observed days / 77 rows; observed days 2025-10-09 to 2025-12-24.
+- `0:workout_distance_total_m`: 40 observed days / 40 rows; observed days 2025-10-09 to 2025-12-22.
+- `35:hr_resting`: 76 observed days / 76 rows; observed days 2025-10-09 to 2025-12-23.
+- `0:sleep_load`: 76 observed days / 76 rows; observed days 2025-10-10 to 2025-12-24.
+- `0:sleep_load_bedtime`: 76 observed days / 76 rows; observed days 2025-10-10 to 2025-12-24.
+- `0:sleep_need_h`: 76 observed days / 76 rows; observed days 2025-10-10 to 2025-12-24.
+- `0:workout_trimp_banister`: 54 observed days / 54 rows; observed days 2025-10-10 to 2025-12-19.
+- `0:workout_max_hr`: 54 observed days / 54 rows; observed days 2025-10-10 to 2025-12-19.
+- `0:workout_hr_drift_pct`: 47 observed days / 47 rows; observed days 2025-10-10 to 2025-12-17.
+- `0:workout_hrr60_bpm`: 53 observed days / 53 rows; observed days 2025-10-10 to 2025-12-17.
+- `0:bioclarity`: 76 observed days / 76 rows; observed days 2025-10-10 to 2025-12-24.
+- `0:bioclarity_phase_h`: 76 observed days / 76 rows; observed days 2025-10-10 to 2025-12-24.
+- `0:hrv_rmssd_avg`: 73 observed days / 73 rows; observed days 2025-10-10 to 2025-12-23.
+- `0:hrv_rmssd_min`: 73 observed days / 73 rows; observed days 2025-10-10 to 2025-12-23.
+- `0:hrv_rmssd_max`: 73 observed days / 73 rows; observed days 2025-10-10 to 2025-12-23.
+- `0:blood_oxygen_spo2_avg`: 69 observed days / 69 rows; observed days 2025-10-10 to 2025-12-24.
+- `0:blood_oxygen_spo2_min`: 69 observed days / 69 rows; observed days 2025-10-10 to 2025-12-24.
+- `0:blood_oxygen_spo2_max`: 69 observed days / 69 rows; observed days 2025-10-10 to 2025-12-24.
+- `0:respiratory_rate_avg`: 75 observed days / 75 rows; observed days 2025-10-10 to 2025-12-24.
+- `0:respiratory_rate_min`: 75 observed days / 75 rows; observed days 2025-10-10 to 2025-12-24.
+- `0:respiratory_rate_max`: 75 observed days / 75 rows; observed days 2025-10-10 to 2025-12-24.
+- `0:body_temperature_avg`: 75 observed days / 75 rows; observed days 2025-10-10 to 2025-12-24.
+- `0:body_temperature_min`: 75 observed days / 75 rows; observed days 2025-10-10 to 2025-12-24.
+- `0:body_temperature_max`: 75 observed days / 75 rows; observed days 2025-10-10 to 2025-12-24.
+- `35:activity_intensity_moderate`: 71 observed days / 71 rows; observed days 2025-10-10 to 2025-12-24.
+- `35:activity_intensity_vigorous`: 71 observed days / 71 rows; observed days 2025-10-10 to 2025-12-24.
+- `0:spo2_desat_index`: 60 observed days / 60 rows; observed days 2025-10-11 to 2025-12-23.
+- `0:body_temperature_deviation_avg`: 69 observed days / 69 rows; observed days 2025-10-12 to 2025-12-23.
+- `0:body_temperature_deviation_min`: 69 observed days / 69 rows; observed days 2025-10-12 to 2025-12-23.
+- `0:body_temperature_deviation_max`: 69 observed days / 69 rows; observed days 2025-10-12 to 2025-12-23.
+- `35:vo2_max`: 49 observed days / 49 rows; observed days 2025-10-13 to 2025-11-30.
+- `2754:hr_resting`: 71 observed days / 71 rows; observed days 2025-10-14 to 2025-12-24.
+- `2754:whoop_recovery_score`: 71 observed days / 71 rows; observed days 2025-10-14 to 2025-12-24.
+
+### Intraday samples / pulse coverage
+- `3889:environment_uv_index`: 1944 decoded points, 1944 UTC hour buckets, 81 days.
+- `3889:environment_air_quality`: 1944 decoded points, 1944 UTC hour buckets, 81 days.
+- `3889:environment_pressure`: 1944 decoded points, 1944 UTC hour buckets, 81 days.
+- `3889:environment_temperature`: 1944 decoded points, 1944 UTC hour buckets, 81 days.
+- `3889:environment_humidity`: 1944 decoded points, 1944 UTC hour buckets, 81 days.
+- `3889:environment_wind_speed`: 1944 decoded points, 1944 UTC hour buckets, 81 days.
+- `3889:environment_precipitation`: 1944 decoded points, 1944 UTC hour buckets, 81 days.
+- `35:body_weight`: 1 decoded points, 1 UTC hour buckets, 1 days.
+- `35:hydration`: 18 decoded points, 18 UTC hour buckets, 18 days.
+- `35:hr`: 1871522 decoded points, 1478 UTC hour buckets, 78 days.
+- `35:hrv_rmssd`: 6908 decoded points, 726 UTC hour buckets, 77 days.
+- `35:respiratory_rate`: 94 decoded points, 94 UTC hour buckets, 72 days.
+- `35:blood_oxygen_spo2`: 25338 decoded points, 646 UTC hour buckets, 74 days.
+- `35:body_temperature`: 72 decoded points, 72 UTC hour buckets, 72 days.
+- `35:body_temperature_deviation`: 70 decoded points, 70 UTC hour buckets, 70 days.
+- `2754:blood_oxygen_spo2`: 3 decoded points, 3 UTC hour buckets, 3 days.
+- `2754:hrv_rmssd`: 1 decoded points, 1 UTC hour buckets, 1 days.
+- `2754:respiratory_rate`: 6 decoded points, 6 UTC hour buckets, 4 days.
+- `2754:body_temperature`: 4 decoded points, 4 UTC hour buckets, 4 days.
+- Direct intraday HR points: 1871522; sources: [35]; days: 78. WHOOP source 2754/2757 HR points: 0.
+- Hour-of-day HR summaries (UTC, with and without overlap with canonical sleep intervals) are in `results.json`; a full aligned intraday WHOOP-vs-Fitbit HR validation is not claimed when WHOOP HR point count is zero.
+
+### Strain against Fitbit metrics (all tested compatible daily measures)
+- `activity_steps:fit35-whoop2754`: n=74, common days 2025-10-08..2025-12-24, Spearman rho=0.046 (p=0.697), Pearson r=0.075 (p=0.526).
+- `activity_intensity_moderate:fit35-whoop2754`: n=67, common days 2025-10-12..2025-12-24, Spearman rho=0.089 (p=0.473), Pearson r=0.024 (p=0.845).
+- `activity_intensity_vigorous:fit35-whoop2754`: n=67, common days 2025-10-12..2025-12-24, Spearman rho=-0.020 (p=0.871), Pearson r=0.057 (p=0.646).
+- `calories_burned_total:fit35-whoop2754`: n=74, common days 2025-10-08..2025-12-24, Spearman rho=0.091 (p=0.441), Pearson r=0.145 (p=0.218).
+
+### Interpretation limits
+- WHOOP day strain is attributed by the importer to the completed cycle end; workouts use their actual start timestamp. These are different dating constructs and are not silently treated as interchangeable.
+- No valid HR-load aggregate is reported without a timestamped HR series and defensible time weighting. Daily resting HR is not a substitute for HR load.
+- Correlations are descriptive within one person and serially dependent; p-values are not independent-observation evidence.
+
+## P2: 2026-04-22 to 2026-05-28
+- Calendar span: 37 days; daily rows: 80 WHOOP-source rows in the filtered view; workouts: 257; canonical sleep intervals: 38.
+
+### Complete metric inventory
+- `0:sleep_load`: 35 observed days / 35 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:sleep_load_bedtime`: 35 observed days / 35 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:sleep_need_h`: 35 observed days / 35 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:bioclarity`: 35 observed days / 35 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:bioclarity_phase_h`: 35 observed days / 35 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:hrv_rmssd_avg`: 31 observed days / 31 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:hrv_rmssd_min`: 31 observed days / 31 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:hrv_rmssd_max`: 31 observed days / 31 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:environment_precipitation_avg`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:environment_precipitation_min`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:environment_precipitation_max`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:blood_oxygen_spo2_avg`: 30 observed days / 30 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:blood_oxygen_spo2_min`: 30 observed days / 30 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:blood_oxygen_spo2_max`: 30 observed days / 30 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:respiratory_rate_avg`: 35 observed days / 35 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:respiratory_rate_min`: 35 observed days / 35 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:respiratory_rate_max`: 35 observed days / 35 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:body_temperature_avg`: 34 observed days / 34 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:body_temperature_min`: 34 observed days / 34 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:body_temperature_max`: 34 observed days / 34 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:body_temperature_deviation_avg`: 15 observed days / 15 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:body_temperature_deviation_min`: 15 observed days / 15 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:body_temperature_deviation_max`: 15 observed days / 15 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:hr_avg`: 34 observed days / 34 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:hr_min`: 34 observed days / 34 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:hr_max`: 34 observed days / 34 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:environment_uv_index_avg`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:environment_uv_index_min`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:environment_uv_index_max`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:environment_air_quality_avg`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:environment_air_quality_min`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:environment_air_quality_max`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:environment_pressure_avg`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:environment_pressure_min`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:environment_pressure_max`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:environment_temperature_avg`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:environment_temperature_min`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:environment_temperature_max`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:environment_humidity_avg`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:environment_humidity_min`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:environment_humidity_max`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:environment_wind_speed_avg`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:environment_wind_speed_min`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:environment_wind_speed_max`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:spo2_desat_index`: 9 observed days / 9 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:workout_distance_total_m`: 23 observed days / 23 rows; observed days 2026-04-22 to 2026-05-27.
+- `0:workout_duration_total_min`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:workout_had_any`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:workout_had_run`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:workout_had_strength`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:workout_had_walk`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:workout_sessions_count`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `35:activity_steps`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `35:activity_intensity_moderate`: 35 observed days / 35 rows; observed days 2026-04-22 to 2026-05-28.
+- `35:activity_intensity_vigorous`: 35 observed days / 35 rows; observed days 2026-04-22 to 2026-05-28.
+- `35:calories_burned_total`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `35:vo2_max`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `35:hr_resting`: 28 observed days / 28 rows; observed days 2026-04-22 to 2026-05-28.
+- `49:activity_steps`: 37 observed days / 37 rows; observed days 2026-04-22 to 2026-05-28.
+- `49:hr_resting`: 21 observed days / 21 rows; observed days 2026-04-22 to 2026-05-28.
+- `2757:whoop_strain_daily`: 34 observed days / 34 rows; observed days 2026-04-22 to 2026-05-28.
+- `0:workout_avg_hr_bpm`: 32 observed days / 32 rows; observed days 2026-04-23 to 2026-05-28.
+- `0:workout_trimp_banister`: 26 observed days / 26 rows; observed days 2026-04-24 to 2026-05-28.
+- `0:workout_max_hr`: 26 observed days / 26 rows; observed days 2026-04-24 to 2026-05-28.
+- `0:workout_hrr60_bpm`: 17 observed days / 17 rows; observed days 2026-04-24 to 2026-05-28.
+- `2757:hr_resting`: 23 observed days / 23 rows; observed days 2026-04-25 to 2026-05-26.
+- `2757:whoop_recovery_score`: 23 observed days / 23 rows; observed days 2026-04-25 to 2026-05-26.
+- `0:nutrition_glucose_blood_avg`: 15 observed days / 15 rows; observed days 2026-04-26 to 2026-05-10.
+- `0:nutrition_glucose_blood_min`: 15 observed days / 15 rows; observed days 2026-04-26 to 2026-05-10.
+- `0:nutrition_glucose_blood_max`: 15 observed days / 15 rows; observed days 2026-04-26 to 2026-05-10.
+- `0:nutrition_ketones_blood_avg`: 2 observed days / 2 rows; observed days 2026-04-28 to 2026-04-29.
+- `0:nutrition_ketones_blood_min`: 2 observed days / 2 rows; observed days 2026-04-28 to 2026-04-29.
+- `0:nutrition_ketones_blood_max`: 2 observed days / 2 rows; observed days 2026-04-28 to 2026-04-29.
+- `49:calories_burned_total`: 31 observed days / 31 rows; observed days 2026-04-28 to 2026-05-28.
+- `48:vo2_max`: 11 observed days / 11 rows; observed days 2026-04-30 to 2026-05-13.
+- `0:workout_hr_drift_pct`: 20 observed days / 20 rows; observed days 2026-05-01 to 2026-05-28.
+- `35:calories_burned_active`: 28 observed days / 28 rows; observed days 2026-05-01 to 2026-05-28.
+- `744:activity_steps`: 25 observed days / 25 rows; observed days 2026-05-01 to 2026-05-28.
+- `744:calories_burned_active`: 20 observed days / 20 rows; observed days 2026-05-01 to 2026-05-28.
+- `744:hr_resting`: 17 observed days / 17 rows; observed days 2026-05-01 to 2026-05-26.
+- `48:hr_resting`: 6 observed days / 6 rows; observed days 2026-05-02 to 2026-05-11.
+- `35:nutrition_calories`: 1 observed days / 1 rows; observed days 2026-05-28 to 2026-05-28.
+
+### Intraday samples / pulse coverage
+- `35:hrv_rmssd`: 1770 decoded points, 188 UTC hour buckets, 23 days.
+- `35:blood_oxygen_spo2`: 4937 decoded points, 141 UTC hour buckets, 29 days.
+- `35:hr`: 646803 decoded points, 476 UTC hour buckets, 33 days.
+- `49:hrv_rmssd`: 1747 decoded points, 166 UTC hour buckets, 22 days.
+- `49:hr`: 666377 decoded points, 495 UTC hour buckets, 33 days.
+- `3889:environment_uv_index`: 960 decoded points, 960 UTC hour buckets, 40 days.
+- `3889:environment_air_quality`: 960 decoded points, 960 UTC hour buckets, 40 days.
+- `3889:environment_pressure`: 960 decoded points, 960 UTC hour buckets, 40 days.
+- `3889:environment_temperature`: 960 decoded points, 960 UTC hour buckets, 40 days.
+- `3889:environment_humidity`: 960 decoded points, 960 UTC hour buckets, 40 days.
+- `3889:environment_wind_speed`: 960 decoded points, 960 UTC hour buckets, 40 days.
+- `3889:environment_precipitation`: 960 decoded points, 960 UTC hour buckets, 40 days.
+- `35:respiratory_rate`: 36 decoded points, 36 UTC hour buckets, 30 days.
+- `49:respiratory_rate`: 18 decoded points, 18 UTC hour buckets, 18 days.
+- `35:body_temperature`: 18 decoded points, 18 UTC hour buckets, 18 days.
+- `35:body_temperature_deviation`: 18 decoded points, 18 UTC hour buckets, 18 days.
+- `2757:respiratory_rate`: 7 decoded points, 7 UTC hour buckets, 7 days.
+- `2757:hrv_rmssd`: 15 decoded points, 15 UTC hour buckets, 15 days.
+- `2757:blood_oxygen_spo2`: 6 decoded points, 6 UTC hour buckets, 6 days.
+- `2757:body_temperature`: 19 decoded points, 19 UTC hour buckets, 19 days.
+- `3318:nutrition_glucose_blood`: 20159 decoded points, 337 UTC hour buckets, 15 days.
+- `3539:nutrition_ketones_blood`: 2 decoded points, 2 UTC hour buckets, 2 days.
+- `744:blood_oxygen_spo2`: 17 decoded points, 17 UTC hour buckets, 17 days.
+- `744:respiratory_rate`: 17 decoded points, 17 UTC hour buckets, 17 days.
+- `744:hr`: 16566 decoded points, 85 UTC hour buckets, 21 days.
+- `35:nutrition_glucose_blood`: 2304 decoded points, 202 UTC hour buckets, 10 days.
+- `759:nutrition_glucose_blood`: 2304 decoded points, 202 UTC hour buckets, 10 days.
+- `48:hr`: 4695 decoded points, 94 UTC hour buckets, 6 days.
+- `48:hrv_rmssd`: 3 decoded points, 3 UTC hour buckets, 3 days.
+- `48:respiratory_rate`: 6 decoded points, 2 UTC hour buckets, 2 days.
+- `48:body_temperature_deviation`: 3 decoded points, 3 UTC hour buckets, 3 days.
+- `48:blood_oxygen_spo2`: 1538 decoded points, 32 UTC hour buckets, 4 days.
+- `49:body_temperature_deviation`: 16 decoded points, 16 UTC hour buckets, 14 days.
+- `771:hr`: 1841 decoded points, 5 UTC hour buckets, 3 days.
+- `771:hrv_rmssd`: 1 decoded points, 1 UTC hour buckets, 1 days.
+- Direct intraday HR points: 1336282; sources: [35, 48, 49, 744, 771]; days: 38. WHOOP source 2754/2757 HR points: 0.
+- Hour-of-day HR summaries (UTC, with and without overlap with canonical sleep intervals) are in `results.json`; a full aligned intraday WHOOP-vs-Fitbit HR validation is not claimed when WHOOP HR point count is zero.
+
+### Strain against Fitbit metrics (all tested compatible daily measures)
+- `activity_steps:fit35-whoop2757`: n=34, common days 2026-04-22..2026-05-28, Spearman rho=0.159 (p=0.368), Pearson r=0.241 (p=0.17).
+- `activity_steps:fit49-whoop2757`: n=34, common days 2026-04-22..2026-05-28, Spearman rho=-0.182 (p=0.304), Pearson r=-0.196 (p=0.267).
+- `activity_steps:fit744-whoop2757`: n=25, common days 2026-05-01..2026-05-28, Spearman rho=0.778 (p=4.77e-06), Pearson r=0.806 (p=1.14e-06).
+- `calories_burned_active:fit35-whoop2757`: n=26, common days 2026-05-01..2026-05-28, Spearman rho=0.063 (p=0.759), Pearson r=0.027 (p=0.894).
+- `calories_burned_active:fit744-whoop2757`: n=20, common days 2026-05-01..2026-05-28, Spearman rho=-0.042 (p=0.86), Pearson r=0.067 (p=0.78).
+- `activity_intensity_moderate:fit35-whoop2757`: n=33, common days 2026-04-22..2026-05-28, Spearman rho=-0.141 (p=0.433), Pearson r=-0.018 (p=0.923).
+- `activity_intensity_vigorous:fit35-whoop2757`: n=33, common days 2026-04-22..2026-05-28, Spearman rho=-0.065 (p=0.718), Pearson r=-0.023 (p=0.898).
+- `calories_burned_total:fit35-whoop2757`: n=34, common days 2026-04-22..2026-05-28, Spearman rho=-0.060 (p=0.737), Pearson r=-0.085 (p=0.631).
+
+### Interpretation limits
+- WHOOP day strain is attributed by the importer to the completed cycle end; workouts use their actual start timestamp. These are different dating constructs and are not silently treated as interchangeable.
+- No valid HR-load aggregate is reported without a timestamped HR series and defensible time weighting. Daily resting HR is not a substitute for HR load.
+- Correlations are descriptive within one person and serially dependent; p-values are not independent-observation evidence.

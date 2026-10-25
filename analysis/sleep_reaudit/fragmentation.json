@@ -1,0 +1,43 @@
+{
+  "n_fitbit_p1_main": 71,
+  "provider_awakenings": {
+    "mean": 3.3661971830985915,
+    "median": 3,
+    "min": 1,
+    "max": 7
+  },
+  "timeline_awake_runs": {
+    "mean": 3.3661971830985915,
+    "median": 3,
+    "distribution": {
+      "1": 1,
+      "2": 18,
+      "3": 28,
+      "4": 10,
+      "5": 8,
+      "6": 4,
+      "7": 2
+    }
+  },
+  "interior_awake_runs": {
+    "total": 104,
+    "mean_per_night": 1.4647887323943662,
+    "median_per_night": 1
+  },
+  "interior_awake_duration_min": {
+    "mean": 12.653846153846155,
+    "median": 10.5,
+    "min": 5.0,
+    "max": 64.5,
+    "n_runs": 104
+  },
+  "short_boundary_runs_le_2min": {
+    "n_nights_with_any": 6,
+    "total_runs": 6,
+    "note": "These short runs occur at sleep boundaries in this extraction; no interior awake run is <=2 minutes."
+  },
+  "whoop": {
+    "awake_episode_count": "unavailable: WHOOP source stores stage totals, not an awake-run timeline",
+    "awake_minutes_are_available": true
+  }
+}

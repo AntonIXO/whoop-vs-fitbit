@@ -1,0 +1,178 @@
+{
+  "input": "data/readiness_optihealth_wide.csv",
+  "family_size": 16,
+  "tests": [
+    {
+      "label": "Fitbit Readiness vs OptiHealth HRV RMSSD",
+      "n": 317,
+      "rho": 0.808562856791978,
+      "p": 0.0001999600079984003,
+      "block_len": 7,
+      "lag": null,
+      "controls": [],
+      "q": 0.0003554844586638228,
+      "survives_q_0_10": true
+    },
+    {
+      "label": "Fitbit Readiness vs OptiHealth resting HR",
+      "n": 317,
+      "rho": -0.5515615028942671,
+      "p": 0.0001999600079984003,
+      "block_len": 7,
+      "lag": null,
+      "controls": [],
+      "q": 0.0003554844586638228,
+      "survives_q_0_10": true
+    },
+    {
+      "label": "Fitbit Readiness vs OptiHealth respiratory rate",
+      "n": 316,
+      "rho": -0.36659460014489376,
+      "p": 0.0001999600079984003,
+      "block_len": 7,
+      "lag": null,
+      "controls": [],
+      "q": 0.0003554844586638228,
+      "survives_q_0_10": true
+    },
+    {
+      "label": "Fitbit Readiness vs total sleep",
+      "n": 316,
+      "rho": -0.00742684487443502,
+      "p": 0.8858228354329134,
+      "block_len": 7,
+      "lag": null,
+      "controls": [],
+      "q": 0.8858228354329134,
+      "survives_q_0_10": false
+    },
+    {
+      "label": "Fitbit Readiness vs deep sleep minutes",
+      "n": 315,
+      "rho": 0.01539143755543014,
+      "p": 0.7866426714657069,
+      "block_len": 7,
+      "lag": null,
+      "controls": [],
+      "q": 0.8390855162300873,
+      "survives_q_0_10": false
+    },
+    {
+      "label": "Fitbit Readiness vs REM minutes",
+      "n": 315,
+      "rho": 0.0329098566782998,
+      "p": 0.5236952609478105,
+      "block_len": 7,
+      "lag": null,
+      "controls": [],
+      "q": 0.5985088696546406,
+      "survives_q_0_10": false
+    },
+    {
+      "label": "Fitbit Readiness vs awake minutes",
+      "n": 316,
+      "rho": 0.07984438194876244,
+      "p": 0.2019596080783843,
+      "block_len": 7,
+      "lag": null,
+      "controls": [],
+      "q": 0.26927947743784575,
+      "survives_q_0_10": false
+    },
+    {
+      "label": "Fitbit Readiness vs WHOOP Strain",
+      "n": 65,
+      "rho": 0.12111013986013985,
+      "p": 0.3255348930213957,
+      "block_len": 5,
+      "lag": null,
+      "controls": [],
+      "q": 0.400658329872487,
+      "survives_q_0_10": false
+    },
+    {
+      "label": "Fitbit Readiness vs WHOOP Recovery",
+      "n": 61,
+      "rho": 0.7937070333157059,
+      "p": 0.0001999600079984003,
+      "block_len": 4,
+      "lag": null,
+      "controls": [],
+      "q": 0.0003554844586638228,
+      "survives_q_0_10": true
+    },
+    {
+      "label": "Fitbit Readiness vs Oura Readiness",
+      "n": 56,
+      "rho": 0.5885167464114833,
+      "p": 0.0001999600079984003,
+      "block_len": 4,
+      "lag": null,
+      "controls": [],
+      "q": 0.0003554844586638228,
+      "survives_q_0_10": true
+    },
+    {
+      "label": "Readiness today vs HRV tomorrow (lag +1d)",
+      "n": 293,
+      "rho": 0.3802626946332323,
+      "p": 0.0001999600079984003,
+      "block_len": 7,
+      "q": 0.0003554844586638228,
+      "survives_q_0_10": true
+    },
+    {
+      "label": "HRV today vs Readiness tomorrow (lag +1d)",
+      "n": 293,
+      "rho": 0.3901042019500774,
+      "p": 0.0001999600079984003,
+      "block_len": 7,
+      "q": 0.0003554844586638228,
+      "survives_q_0_10": true
+    },
+    {
+      "label": "Readiness today vs resting HR tomorrow (lag +1d)",
+      "n": 293,
+      "rho": -0.4968637321682613,
+      "p": 0.0001999600079984003,
+      "block_len": 7,
+      "q": 0.0003554844586638228,
+      "survives_q_0_10": true
+    },
+    {
+      "label": "resting HR today vs Readiness tomorrow (lag +1d)",
+      "n": 293,
+      "rho": -0.3468261866437164,
+      "p": 0.0001999600079984003,
+      "block_len": 7,
+      "q": 0.0003554844586638228,
+      "survives_q_0_10": true
+    },
+    {
+      "label": "WHOOP\u2212Fitbit score gap vs total sleep",
+      "n": 61,
+      "rho": 0.32982548915917503,
+      "p": 0.005198960207958408,
+      "block_len": 4,
+      "q": 0.008318336332733453,
+      "survives_q_0_10": true
+    },
+    {
+      "label": "WHOOP\u2212Fitbit score gap vs REM",
+      "n": 61,
+      "rho": 0.3132734003172924,
+      "p": 0.012397520495900819,
+      "block_len": 4,
+      "q": 0.018032757084946647,
+      "survives_q_0_10": true
+    }
+  ],
+  "method": {
+    "season_adjustment": "intercept + annual sin/cos on each paired ordered cohort",
+    "null": "OptiHealth circular block permutation",
+    "n_perm": 5000,
+    "max_exceedances": null,
+    "fdr": "Benjamini-Hochberg q <= 0.10",
+    "serial_warning": "p-values are block-exchangeability surrogates, not iid or causal tests"
+  }
+}

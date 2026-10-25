@@ -1,0 +1,113 @@
+{
+  "strain vs Fitbit total kcal": {
+    "n": 74,
+    "spearman": 0.091,
+    "pearson": 0.145,
+    "p": 0.4183
+  },
+  "strain vs Fitbit ACTIVE kcal": {
+    "n": 0,
+    "note": "n<15"
+  },
+  "strain vs Fitbit steps": {
+    "n": 74,
+    "spearman": 0.066,
+    "pearson": 0.098,
+    "p": 0.5538
+  },
+  "strain vs Fitbit moderate-intensity min": {
+    "n": 67,
+    "spearman": 0.089,
+    "pearson": 0.024,
+    "p": 0.4582
+  },
+  "strain vs Fitbit vigorous-intensity min": {
+    "n": 67,
+    "spearman": -0.034,
+    "pearson": 0.043,
+    "p": 0.753
+  },
+  "strain vs Fitbit MVPA (mod+vig)": {
+    "n": 74,
+    "spearman": 0.058,
+    "pearson": 0.101,
+    "p": 0.5817
+  },
+  "strain vs mean daily HR": {
+    "n": 73,
+    "spearman": 0.204,
+    "pearson": 0.182,
+    "p": 0.0852
+  },
+  "strain vs daily HR p95": {
+    "n": 73,
+    "spearman": 0.079,
+    "pearson": 0.082,
+    "p": 0.5498
+  },
+  "strain vs daily HR max": {
+    "n": 73,
+    "spearman": 0.165,
+    "pearson": 0.142,
+    "p": 0.1617
+  },
+  "strain vs minutes HR>100": {
+    "n": 73,
+    "spearman": 0.026,
+    "pearson": -0.009,
+    "p": 0.8526
+  },
+  "strain vs minutes HR>120": {
+    "n": 73,
+    "spearman": 0.103,
+    "pearson": 0.055,
+    "p": 0.4382
+  },
+  "strain vs minutes HR>140": {
+    "n": 73,
+    "spearman": 0.111,
+    "pearson": 0.11,
+    "p": 0.3745
+  },
+  "strain vs WHOOP workout minutes": {
+    "n": 71,
+    "spearman": 0.12,
+    "pearson": 0.136,
+    "p": 0.3386
+  },
+  "strain vs WHOOP workout kcal": {
+    "n": 64,
+    "spearman": -0.087,
+    "pearson": 0.015,
+    "p": 0.4861
+  },
+  "strain vs WHOOP session count": {
+    "n": 71,
+    "spearman": 0.17,
+    "pearson": 0.169,
+    "p": 0.1637
+  },
+  "strain vs sum of session strains": {
+    "n": 64,
+    "spearman": -0.021,
+    "pearson": -0.004,
+    "p": 0.8645
+  },
+  "strain vs max session strain": {
+    "n": 64,
+    "spearman": -0.172,
+    "pearson": -0.073,
+    "p": 0.1517
+  },
+  "log_check_min_above_120": {
+    "n": 69,
+    "pearson_linear": 0.053,
+    "pearson_on_log1p": 0.08
+  },
+  "rest_days": {
+    "n_no_workout": 3,
+    "strain_no_workout": 8.6,
+    "n_with_workout": 71,
+    "strain_with_workout": 11.1
+  }
+}

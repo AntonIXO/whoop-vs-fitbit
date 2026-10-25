@@ -1,0 +1,106 @@
+{
+  "source": "OptiHealth production PostgreSQL",
+  "retrieved_at": "2026-10-12",
+  "user_id": "9e73d06e-1006-4266-bde7-85659f5de69d",
+  "run_id": "baa46362-8858-4cd1-948f-0852fb674118",
+  "run_as_of": "2026-10-12T03:14:25.997337+00:00",
+  "run_window": ["2024-10-12", "2026-10-12"],
+  "note": "Snapshot of current production insight cards selected for relevance to the Fitbit-vs-WHOOP article. It is not a re-analysis of raw data and does not replace the article CSV analyses.",
+  "long_window_whoop_cards": [
+    {
+      "title": "Link Between Hrv Rmssd and Whoop Recovery Score",
+      "calendar_adjusted_r": 0.75,
+      "season_adjusted_r": 0.76,
+      "n_days": 89
+    },
+    {
+      "title": "Link Between Hr Min and Whoop Recovery Score",
+      "calendar_adjusted_r": -0.61,
+      "season_adjusted_r": -0.67,
+      "n_days": 93
+    },
+    {
+      "title": "Link Between Respiratory Rate Min and Whoop Recovery Score",
+      "calendar_adjusted_r": -0.54,
+      "season_adjusted_r": -0.61,
+      "n_days": 94
+    },
+    {
+      "title": "Link Between Hr Resting and Whoop Recovery Score",
+      "calendar_adjusted_r": -0.49,
+      "season_adjusted_r": -0.42,
+      "n_days": 94
+    },
+    {
+      "title": "Link Between Whoop Recovery Score and Sleep Duration Total",
+      "calendar_adjusted_r": 0.35,
+      "season_adjusted_r": 0.38,
+      "n_days": 94
+    },
+    {
+      "title": "Link Between Hr Max and Workout Trimp Banister",
+      "calendar_adjusted_r": 0.41,
+      "season_adjusted_r": 0.40,
+      "n_days": 173
+    }
+  ],
+  "article_period_cards": [
+    {
+      "ordinal": 355,
+      "type": "resting_anomaly",
+      "title": "Elevated Resting Physiology 2025-12-15–2025-12-17",
+      "summary": "Resting HR was above personal baseline for 3 days, peaking at 5.4 robust-SD; respiratory rate increased and HRV RMSSD decreased."
+    },
+    {
+      "ordinal": 362,
+      "type": "acute_recovery_strain",
+      "title": "Acute Low-Recovery Episode: 2025-12-14–2025-12-16",
+      "summary": "Respiratory rate was 17.0 vs 13.4 baseline and resting HR 52 vs 48 baseline; the engine flagged a cross-domain low-recovery episode."
+    },
+    {
+      "ordinal": 363,
+      "type": "acute_recovery_strain",
+      "title": "Acute Low-Recovery Episode: 2025-12-03",
+      "summary": "Total sleep was 288 vs 487 min baseline, REM 29 vs 105 min, efficiency 84.4% vs 93.5%, and respiratory rate 14.5 vs 13.4."
+    }
+  ],
+  "daytime_pulse_cards": [
+    {
+      "title": "Link Between Hr Max and Workout Max Hr",
+      "calendar_adjusted_r": 0.69,
+      "season_adjusted_r": 0.66,
+      "n_days": 173
+    },
+    {
+      "title": "Link Between Hr and Workout Sessions Count",
+      "calendar_adjusted_r": 0.51,
+      "n_days": 90
+    },
+    {
+      "title": "Link Between Hr and Workout Duration Total Min",
+      "calendar_adjusted_r": 0.48,
+      "n_days": 90
+    }
+  ],
+  "sleep_latency_card": {
+    "title": "Workout Avg HR Today Precedes Sleep Latency Minutes 3 Days Later",
+    "calendar_adjusted_r": 0.48,
+    "lag_days": 3,
+    "n_days": 61,
+    "interpretation": "Marginal lagged association; current card explicitly does not establish direction or causality."
+  },
+  "related_recorder_card": {
+    "type": "sleep_stage_hr_profile",
+    "title": "Your device's sleep stages track real physiology",
+    "n_nights": 318,
+    "stage_hr_bpm": {
+      "deep": 43.2,
+      "light": 44.3,
+      "rem": 45.7,
+      "awake": 50.3
+    },
+    "rem_above_deep_bpm": 3.0,
+    "nights_rem_above_deep_pct": 94,
+    "note": "This supports the recorder's pooled physiological ordering; it does not validate any individual device's stage labels."
+  }
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "id": 35,
+    "source_identifier": "google_health:6302349631570837559",
+    "source_name": "Google Health (Fitbit & connected health apps)"
+  },
+  {
+    "id": 2754,
+    "source_identifier": "whoop:31695515",
+    "source_name": "WHOOP"
+  },
+  {
+    "id": 2757,
+    "source_identifier": "whoop:36797758",
+    "source_name": "WHOOP"
+  }
+]

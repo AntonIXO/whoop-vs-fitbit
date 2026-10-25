@@ -1,0 +1,404 @@
+{
+  "method": "Descriptive Spearman rho; pairwise complete observations; no causal interpretation.",
+  "nightly_metric_summary": {
+    "f_tst": {
+      "n": 68,
+      "mean": 473.0,
+      "median": 487.5,
+      "sd": 95.471,
+      "min": 163.0,
+      "max": 707.0
+    },
+    "f_tib": {
+      "n": 68,
+      "mean": 513.779,
+      "median": 527.5,
+      "sd": 101.845,
+      "min": 185.0,
+      "max": 749.0
+    },
+    "f_deep": {
+      "n": 68,
+      "mean": 98.162,
+      "median": 101.5,
+      "sd": 18.115,
+      "min": 59.0,
+      "max": 148.0
+    },
+    "f_rem": {
+      "n": 68,
+      "mean": 101.191,
+      "median": 105.0,
+      "sd": 28.201,
+      "min": 6.0,
+      "max": 161.0
+    },
+    "f_light": {
+      "n": 68,
+      "mean": 273.647,
+      "median": 276.0,
+      "sd": 63.974,
+      "min": 92.0,
+      "max": 437.0
+    },
+    "f_awake": {
+      "n": 68,
+      "mean": 40.279,
+      "median": 33.0,
+      "sd": 23.662,
+      "min": 9.0,
+      "max": 119.0
+    },
+    "f_eff": {
+      "n": 68,
+      "mean": 92.181,
+      "median": 93.548,
+      "sd": 4.089,
+      "min": 76.482,
+      "max": 98.421
+    },
+    "f_latency": {
+      "n": 68,
+      "mean": 0.0,
+      "median": 0.0,
+      "sd": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "f_awakenings": {
+      "n": 68,
+      "mean": 3.353,
+      "median": 3.0,
+      "sd": 1.347,
+      "min": 1.0,
+      "max": 7.0
+    },
+    "f_rhr": {
+      "n": 68,
+      "mean": 47.985,
+      "median": 48.0,
+      "sd": 1.152,
+      "min": 46.0,
+      "max": 52.0
+    },
+    "hr_night": {
+      "n": 68,
+      "mean": 44.328,
+      "median": 43.792,
+      "sd": 2.06,
+      "min": 41.289,
+      "max": 50.896
+    },
+    "hr_night_min": {
+      "n": 68,
+      "mean": 38.647,
+      "median": 38.0,
+      "sd": 0.877,
+      "min": 38.0,
+      "max": 42.0
+    },
+    "hrv_night": {
+      "n": 67,
+      "mean": 76.827,
+      "median": 75.979,
+      "sd": 10.122,
+      "min": 57.561,
+      "max": 106.803
+    },
+    "spo2_night": {
+      "n": 59,
+      "mean": 96.936,
+      "median": 96.974,
+      "sd": 0.546,
+      "min": 95.477,
+      "max": 98.25
+    },
+    "spo2_sd": {
+      "n": 59,
+      "mean": 1.518,
+      "median": 1.526,
+      "sd": 0.5,
+      "min": 0.632,
+      "max": 3.463
+    },
+    "w_rhr": {
+      "n": 65,
+      "mean": 41.215,
+      "median": 41.0,
+      "sd": 1.875,
+      "min": 38.0,
+      "max": 47.0
+    },
+    "w_recovery": {
+      "n": 65,
+      "mean": 64.985,
+      "median": 69.0,
+      "sd": 19.445,
+      "min": 15.0,
+      "max": 98.0
+    },
+    "w_strain": {
+      "n": 65,
+      "mean": 11.046,
+      "median": 10.801,
+      "sd": 3.422,
+      "min": 0.162,
+      "max": 19.345
+    }
+  },
+  "paired_sleep_agreement": {
+    "total_sleep_min": {
+      "n": 68,
+      "rho": 0.961,
+      "fitbit_mean": 473.0,
+      "whoop_mean": 463.515,
+      "whoop_minus_fitbit_mean": -9.485,
+      "whoop_minus_fitbit_median": -8.0
+    },
+    "time_in_bed_min": {
+      "n": 68,
+      "rho": 0.951,
+      "fitbit_mean": 513.779,
+      "whoop_mean": 491.235,
+      "whoop_minus_fitbit_mean": -22.544,
+      "whoop_minus_fitbit_median": -17.0
+    },
+    "deep_sleep_min": {
+      "n": 68,
+      "rho": 0.523,
+      "fitbit_mean": 98.162,
+      "whoop_mean": 124.412,
+      "whoop_minus_fitbit_mean": 26.25,
+      "whoop_minus_fitbit_median": 28.0
+    },
+    "rem_sleep_min": {
+      "n": 68,
+      "rho": 0.812,
+      "fitbit_mean": 101.191,
+      "whoop_mean": 98.882,
+      "whoop_minus_fitbit_mean": -2.309,
+      "whoop_minus_fitbit_median": -2.0
+    }
+  },
+  "whoop_vs_fitbit_sleep_and_pulse": {
+    "WHOOP Recovery vs Fitbit total sleep": {
+      "n": 65,
+      "rho": 0.274
+    },
+    "WHOOP Recovery vs Fitbit deep sleep": {
+      "n": 65,
+      "rho": 0.257
+    },
+    "WHOOP Recovery vs Fitbit REM": {
+      "n": 65,
+      "rho": 0.196
+    },
+    "WHOOP Recovery vs Fitbit awake minutes": {
+      "n": 65,
+      "rho": 0.352
+    },
+    "WHOOP Recovery vs Fitbit awakenings": {
+      "n": 65,
+      "rho": 0.307
+    },
+    "WHOOP Recovery vs Fitbit efficiency": {
+      "n": 65,
+      "rho": -0.139
+    },
+    "WHOOP Recovery vs Fitbit RHR": {
+      "n": 65,
+      "rho": -0.554
+    },
+    "WHOOP Recovery vs night mean HR": {
+      "n": 65,
+      "rho": -0.808
+    },
+    "WHOOP Recovery vs night minimum HR": {
+      "n": 65,
+      "rho": -0.759
+    },
+    "WHOOP Recovery vs night HRV": {
+      "n": 64,
+      "rho": 0.803
+    },
+    "WHOOP Recovery vs night SpO2": {
+      "n": 56,
+      "rho": -0.12
+    },
+    "WHOOP Day Strain vs Fitbit total sleep": {
+      "n": 65,
+      "rho": -0.247
+    },
+    "WHOOP Day Strain vs Fitbit deep sleep": {
+      "n": 65,
+      "rho": -0.202
+    },
+    "WHOOP Day Strain vs Fitbit REM": {
+      "n": 65,
+      "rho": -0.365
+    },
+    "WHOOP Day Strain vs Fitbit awake minutes": {
+      "n": 65,
+      "rho": 0.145
+    },
+    "WHOOP Day Strain vs Fitbit awakenings": {
+      "n": 65,
+      "rho": 0.062
+    },
+    "WHOOP Day Strain vs Fitbit efficiency": {
+      "n": 65,
+      "rho": -0.276
+    },
+    "WHOOP Day Strain vs Fitbit RHR": {
+      "n": 65,
+      "rho": 0.102
+    },
+    "WHOOP Day Strain vs night mean HR": {
+      "n": 65,
+      "rho": 0.188
+    },
+    "WHOOP Day Strain vs night minimum HR": {
+      "n": 65,
+      "rho": 0.317
+    },
+    "WHOOP Day Strain vs night HRV": {
+      "n": 64,
+      "rho": -0.012
+    },
+    "WHOOP Day Strain vs night SpO2": {
+      "n": 56,
+      "rho": -0.076
+    },
+    "WHOOP sleep RHR vs Fitbit total sleep": {
+      "n": 65,
+      "rho": -0.115
+    },
+    "WHOOP sleep RHR vs Fitbit deep sleep": {
+      "n": 65,
+      "rho": -0.237
+    },
+    "WHOOP sleep RHR vs Fitbit REM": {
+      "n": 65,
+      "rho": -0.086
+    },
+    "WHOOP sleep RHR vs Fitbit awake minutes": {
+      "n": 65,
+      "rho": -0.178
+    },
+    "WHOOP sleep RHR vs Fitbit awakenings": {
+      "n": 65,
+      "rho": -0.192
+    },
+    "WHOOP sleep RHR vs Fitbit efficiency": {
+      "n": 65,
+      "rho": 0.106
+    },
+    "WHOOP sleep RHR vs Fitbit RHR": {
+      "n": 65,
+      "rho": 0.668
+    },
+    "WHOOP sleep RHR vs night mean HR": {
+      "n": 65,
+      "rho": 0.86
+    },
+    "WHOOP sleep RHR vs night minimum HR": {
+      "n": 65,
+      "rho": 0.818
+    },
+    "WHOOP sleep RHR vs night HRV": {
+      "n": 64,
+      "rho": -0.749
+    },
+    "WHOOP sleep RHR vs night SpO2": {
+      "n": 56,
+      "rho": -0.125
+    }
+  },
+  "strain_vs_fitbit_activity_and_pulse": {
+    "Fitbit total calories": {
+      "n": 74,
+      "rho": 0.091
+    },
+    "Fitbit steps": {
+      "n": 74,
+      "rho": 0.066
+    },
+    "Fitbit moderate minutes": {
+      "n": 67,
+      "rho": 0.089
+    },
+    "Fitbit vigorous minutes": {
+      "n": 67,
+      "rho": -0.034
+    },
+    "Fitbit MVPA": {
+      "n": 74,
+      "rho": 0.058
+    },
+    "Fitbit daily mean HR": {
+      "n": 73,
+      "rho": 0.204
+    },
+    "Fitbit daily HR p95": {
+      "n": 73,
+      "rho": 0.079
+    },
+    "Fitbit daily HR max": {
+      "n": 73,
+      "rho": 0.165
+    },
+    "Fitbit minutes HR>100": {
+      "n": 73,
+      "rho": 0.026
+    },
+    "Fitbit minutes HR>120": {
+      "n": 73,
+      "rho": 0.103
+    },
+    "Fitbit minutes HR>140": {
+      "n": 73,
+      "rho": 0.111
+    },
+    "WHOOP workout minutes": {
+      "n": 71,
+      "rho": 0.12
+    },
+    "WHOOP workout calories": {
+      "n": 64,
+      "rho": -0.087
+    },
+    "WHOOP session count": {
+      "n": 71,
+      "rho": 0.17
+    },
+    "WHOOP session Strain sum": {
+      "n": 64,
+      "rho": -0.021
+    },
+    "WHOOP max session Strain": {
+      "n": 64,
+      "rho": -0.172
+    }
+  },
+  "data_quality": {
+    "fitbit_sleep_latency": {
+      "n": 68,
+      "mean": 0.0,
+      "median": 0.0,
+      "sd": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "fitbit_sleep_latency_interpretation": "All 68 values are zero; this export does not contain usable latency variation.",
+    "fitbit_awakenings": {
+      "n": 68,
+      "mean": 3.353,
+      "median": 3.0,
+      "sd": 1.347,
+      "min": 1.0,
+      "max": 7.0
+    },
+    "whoop_wake_events": "Not present in the local nightly export; do not infer them from Fitbit awakenings.",
+    "daily_pulse": "The strain export contains daily mean, p95, max HR and threshold minutes; these are not a raw continuous HR trace."
+  }
+}

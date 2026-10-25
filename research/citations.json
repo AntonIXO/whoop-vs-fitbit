@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://www.mdpi.com/2227-7080/11/3/79",
+      "title": "",
+      "accessed": "2026-09-12"
+    },
+    {
+      "id": 2,
+      "url": "https://support.whoop.com/s/article/What-is-Max-Heart-Rate-and-How-Do-I-Adjust-It",
+      "title": "",
+      "accessed": "2026-09-12",
+      "quotes": [
+        {
+          "text": "- Strain is **not directly influenced by HR Zones**, but rather by how much time your heart rate **spends at elevated levels**.",
+          "added": "2026-09-12"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "url": "https://www.whoop.com/us/en/thelocker/how-does-whoop-strain-work-101",
+      "title": "",
+      "accessed": "2026-09-12"
+    },
+    {
+      "id": 4,
+      "url": "https://developer.whoop.com/docs/developing/user-data/cycle",
+      "title": "",
+      "accessed": "2026-09-12"
+    },
+    {
+      "id": 5,
+      "url": "https://www.whoop.com/us/en/thelocker/2026-whats-new",
+      "title": "",
+      "accessed": "2026-09-12",
+      "quotes": [
+        {
+          "text": "A new signal processing algorithm improves heart rate tracking across a range of conditions. You won’t see a new screen or feature, but the data behind your Recovery, Strain, and Sleep is more precise. The kind of improvement that makes everything else more trustworthy.",
+          "added": "2026-09-12"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "url": "https://www.whoop.com/us/en/thelocker/everything-whoop-launched-in-2025",
+      "title": "",
+      "accessed": "2026-09-12"
+    },
+    {
+      "id": 7,
+      "url": "https://blog.google/products-and-platforms/devices/fitbit/fitbit-personal-health-coach-updates-2026",
+      "title": "",
+      "accessed": "2026-09-12",
+      "quotes": [
+        {
+          "text": "This enhanced tracking rolls out over the next few days, with the new Score experience following in the coming weeks for Public Preview users.",
+          "added": "2026-09-12"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "url": "https://blog.google/products-and-platforms/devices/fitbit/pixel-watch-3-daily-readiness-update-cardio-target-load",
+      "title": "",
+      "accessed": "2026-09-12"
+    },
+    {
+      "id": 9,
+      "url": "https://www.whoop.com/us/en/thelocker/introducing-strength-trainer-a-new-way-to-quantify-the-impact-of-your-strength-training",
+      "title": "",
+      "accessed": "2026-09-12"
+    },
+    {
+      "id": 10,
+      "url": "https://academic.oup.com/sleepadvances/article/6/2/zpaf021/8090472",
+      "title": "",
+      "accessed": "2026-09-12"
+    },
+    {
+      "id": 11,
+      "url": "https://www.whoop.com/us/en/press-center/whoop-introduces-strength-trainer-becomes-first-wearable-to-measure-muscular",
+      "title": "",
+      "accessed": "2026-09-12",
+      "quotes": [
+        {
+          "text": "**BOSTON (April 25, 2023)** – [WHOOP](https://www.whoop.com/us/en/), the human performance company, today announced the launch of Strength Trainer, a new feature that allows members to measure strength training exercises and quantify the physiological impact of muscular load. With this launch, WHOOP 4.0 becomes the first and only wearable to measure how strength training impacts the body. This all-new feature tracks exercises, reps, and weight usage to quantify muscular load, using the accelerometer and gyroscope sensors to calculate the strain that’s put on the musculoskeletal system. That muscular load is now factored into the WHOOP Strain score to provide a more comprehensive and advanced view of the demands placed on the body.",
+          "added": "2026-09-12"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "url": "https://www.community.whoop.com/t/whats-new-in-whoops-sleep-staging-algorithm-update/321",
+      "title": "",
+      "accessed": "2026-09-12",
+      "quotes": [
+        {
+          "text": "WHOOP’s sleep staging algorithm has been updated in a couple keys ways. First, WHOOP collected a lot more sleep data by partnering with sleep labs at Central Queensland University and University of Arizona. The increase in dataset size improves our machine learning model’s ability to learn the patterns in WHOOP sensor data that correspond to different stages of sleep. Second, WHOOP has developed new ways of interpreting sensor data collected by the WHOOP strap. These new interpretations give us new information about the member’s circadian rhythm and autonomic nervous system, which inform what stage of sleep the member is in.",
+          "added": "2026-09-12"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12038347",
+      "title": "",
+      "accessed": "2026-09-12"
+    },
+    {
+      "id": 14,
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12038347/fullTextXML",
+      "title": "",
+      "accessed": "2026-09-12"
+    },
+    {
+      "id": 15,
+      "url": "https://support.google.com/fitbit/answer/14236712",
+      "title": "Google Health sleep stages",
+      "accessed": "2026-10-12"
+    },
+    {
+      "id": 16,
+      "url": "https://developer.whoop.com/docs/developing/user-data/sleep",
+      "title": "WHOOP Sleep API",
+      "accessed": "2026-10-12"
+    },
+    {
+      "id": 17,
+      "url": "https://support.whoop.com/s/article/WHOOP-Recovery?language=en_US",
+      "title": "WHOOP Recovery",
+      "accessed": "2026-10-12"
+    }
+  ]
+}
